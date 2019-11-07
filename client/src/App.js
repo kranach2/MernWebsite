@@ -29,6 +29,7 @@ function App() {
     <div className="App">
       <header className="App-header"> </header>
       <h1>Coming soon!!!</h1>
+      <h2>www.ct-webtech.com</h2>
       <div className={styles.time}>
         <div className={styles.group}>
           <span className={styles.day}>{day}</span>
@@ -46,6 +47,9 @@ function App() {
         </div>
       </div>
       <h1> {message} </h1>{" "}
+    </div>
+    <div>
+      <p>&copy; 2019 <i>kishor Rana Chhetri </i></p>
     </div>
   );
 }
