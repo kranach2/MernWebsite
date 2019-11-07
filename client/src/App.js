@@ -47,10 +47,11 @@ function App() {
         </div>
       </div>
       <h1> {message} </h1>{" "}
+      <div className={styles.footer}>
+      <p>&copy; 2019<i>Kishor Rana Chhetri</i></p>
     </div>
-    <div>
-      <p>&copy; 2019 <i>kishor Rana Chhetri </i></p>
     </div>
+    
   );
 }
 
