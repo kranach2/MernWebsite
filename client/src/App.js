@@ -2,12 +2,21 @@ import React, { useState } from "react";
 import styles from "./css/App.module.css";
 
 function App() {
+  const [loader, setloader] = useState(true);
   const [day, setDay] = useState("00");
   const [hour, setHour] = useState("00");
   const [minute, setMinute] = useState("00");
   const [second, setSecond] = useState("00");
   const [message, setMessage] = useState("");
   const targetDate = new Date("Nov 14, 2019 15:55:25").getTime();
+
+  function onload() {
+    if (loader) {
+      return <div className={styles.loading}></div>;
+    } else {
+      return "";
+    }
+  }
   const countdown = setInterval(() => {
     const now = new Date().getTime();
     const timeLeft = targetDate - now;
@@ -15,6 +24,7 @@ function App() {
     setHour(Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)));
     setMinute(Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60)));
     setSecond(Math.floor((timeLeft % (1000 * 60)) / 1000));
+    setloader(false);
     if (timeLeft < 0) {
       clearInterval(countdown);
       setDay("00");
@@ -27,31 +37,40 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header"> </header>
-      <h1>Coming soon!!!</h1>
-      <h2>www.ct-webtech.com</h2>
-      <div className={styles.time}>
-        <div className={styles.group}>
-          <span className={styles.day}>{day}</span>
-          &nbsp;{" "}
-          <span style={{ fontWeight: "bold", fontSize: "20px" }}>day</span>{" "}
-          &nbsp;
-          <span className={styles.hour}>{hour}</span> &nbsp;
-          <span style={{ fontWeight: "bold", fontSize: "20px" }}>hour</span>{" "}
-          &nbsp;
-          <span className={styles.minute}>{minute}</span> &nbsp;{" "}
-          <span style={{ fontWeight: "bold", fontSize: "20px" }}>minutes</span>{" "}
-          &nbsp;
-          <span className={styles.second}>{second}</span>&nbsp;{" "}
-          <span style={{ fontWeight: "bold", fontSize: "20px" }}>second</span>
+      {onload()}
+      <header className="App-header">
+        <h1>Coming soon!!!</h1>
+        <h2>www.ct-webtech.com</h2>
+        <div className={styles.time}>
+          <div className={styles.group}>
+            <span className={styles.day}>{day}</span>
+            &nbsp;{" "}
+            <span style={{ fontWeight: "bold", fontSize: "20px" }}>
+              day
+            </span>{" "}
+            &nbsp;
+            <span className={styles.hour}>{hour}</span> &nbsp;
+            <span style={{ fontWeight: "bold", fontSize: "20px" }}>
+              hour
+            </span>{" "}
+            &nbsp;
+            <span className={styles.minute}>{minute}</span> &nbsp;{" "}
+            <span style={{ fontWeight: "bold", fontSize: "20px" }}>
+              minutes
+            </span>{" "}
+            &nbsp;
+            <span className={styles.second}>{second}</span>&nbsp;{" "}
+            <span style={{ fontWeight: "bold", fontSize: "20px" }}>second</span>
+          </div>
         </div>
-      </div>
-      <h1> {message} </h1>{" "}
-      <div className={styles.footer}>
-      <p>&copy; 2019<i>Kishor Rana Chhetri</i></p>
+        <h2> {message} </h2>{" "}
+        <div className={styles.footer}>
+          <p>
+            &copy; 2019<i>Kishor Rana Chhetri</i>
+          </p>
+        </div>
+      </header>
     </div>
-    </div>
-    
   );
 }
 

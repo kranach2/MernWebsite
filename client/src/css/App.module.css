@@ -9,8 +9,10 @@ body {
   background-color: rgb(71, 50, 173);
   width: 100%;
   height: 100vh;
+  position: relative;
 }
-h1, h2 {
+h1,
+h2 {
   margin: 5px;
   text-align: center;
   color: green;
@@ -45,8 +47,72 @@ h1, h2 {
   font-size: 40px;
 }
 
-:local(.footer){
-    position: fixed;
-    bottom:0;
-    text-align: center;
+:local(.footer) {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  text-align: center;
+}
+
+:local(.loading) {
+  width: 100%;
+  height: 105vh;
+  background-color: black;
+  background-image: url("https://media.giphy.com/media/Bs7SyQuQsW97W/giphy.gif");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media only screen and (max-width: 600px) {
+  h1,
+  h2 {
+    font-size: 20px;
+  }
+  :local(.day),
+  :local(.hour),
+  :local(.minute),
+  :local(.second) {
+    border: 2px solid rgb(102, 0, 0);
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  h1,
+  h2 {
+    font-size: 30px;
+  }
+  :local(.day),
+  :local(.hour),
+  :local(.minute),
+  :local(.second) {
+    border: 2px solid rgb(102, 0, 0);
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  h1,
+  h2 {
+    font-size: 40px;
+  }
+  :local(.day),
+  :local(.hour),
+  :local(.minute),
+  :local(.second) {
+    border: 3px solid rgb(102, 0, 0);
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  h1,
+  h2 {
+    font-size: 50px;
+  }
+  :local(.day),
+  :local(.hour),
+  :local(.minute),
+  :local(.second) {
+    border: 3px solid rgb(102, 0, 0);
+    font-size: 50px;
+  }
 }
