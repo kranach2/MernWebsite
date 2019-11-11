@@ -45,19 +45,19 @@ function App() {
           <div className={styles.group}>
             <ul>
             <li> <span className={styles.day}>{day}</span>
-            &nbsp;{" "}
+            &nbsp;
             <span className={ styles.textday}>
               day
-            </span>{" "} </li> &nbsp;
+            </span>{" "} &nbsp; </li> 
 
           <li>
-            <span className={styles.hour}>{hour}</span> &nbsp;
+            <span className={styles.hour}>{hour}</span>&nbsp;
             <span className={ styles.texthour}>
               hour
-            </span>{" "} &nbsp;
-            </li>
+            </span>{" "} &nbsp; </li>
+            
             <li>
-            <span className={styles.minute}>{minute}</span> &nbsp;{" "}
+            <span className={styles.minute}>{minute}</span> &nbsp;
             <span className={ styles.textminute}>
               minute
             </span>{" "} &nbsp;
