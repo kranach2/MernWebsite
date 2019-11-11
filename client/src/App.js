@@ -43,24 +43,30 @@ function App() {
         <h2>www.ct-webtech.com</h2>
         <div className={styles.time}>
           <div className={styles.group}>
-            <span className={styles.day}>{day}</span>
+            <ul>
+            <li> <span className={styles.day}>{day}</span>
             &nbsp;{" "}
-            <span style={{ fontWeight: "bold", fontSize: "20px" }}>
+            <span className={ styles.textday}>
               day
-            </span>{" "}
-            &nbsp;
+            </span>{" "} </li> &nbsp;
+
+          <li>
             <span className={styles.hour}>{hour}</span> &nbsp;
-            <span style={{ fontWeight: "bold", fontSize: "20px" }}>
+            <span className={ styles.texthour}>
               hour
-            </span>{" "}
-            &nbsp;
+            </span>{" "} &nbsp;
+            </li>
+            <li>
             <span className={styles.minute}>{minute}</span> &nbsp;{" "}
-            <span style={{ fontWeight: "bold", fontSize: "20px" }}>
-              minutes
-            </span>{" "}
-            &nbsp;
+            <span className={ styles.textminute}>
+              minute
+            </span>{" "} &nbsp;
+            </li>
+            <li>
             <span className={styles.second}>{second}</span>&nbsp;{" "}
-            <span style={{ fontWeight: "bold", fontSize: "20px" }}>second</span>
+            <span className={ styles.textsecond}>second</span>
+            </li>
+            </ul>
           </div>
         </div>
         <h2> {message} </h2>{" "}

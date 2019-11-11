@@ -32,7 +32,9 @@ h2 {
   margin-bottom: 250px;
   text-align: center;
 }
-
+ul li {
+  display: inline-block;
+}
 :local(.day),
 :local(.hour),
 :local(.minute),
@@ -45,6 +47,25 @@ h2 {
   border-radius: 10px;
   color: rgb(255, 255, 255);
   font-size: 40px;
+}
+:local(.textday){
+    font-weight: bold;
+    font-size: 20px;
+}
+
+:local(.texthour){
+    font-weight: bold;
+    font-size: 20px;
+}
+
+:local(.textminute){
+    font-weight: bold;
+    font-size: 20px;
+}
+
+:local(.textsecond){
+    font-weight: bold;
+    font-size: 20px;
 }
 
 :local(.footer) {
@@ -68,39 +89,29 @@ h2 {
   h2 {
     font-size: 20px;
   }
-  :local(.day),
-  :local(.hour),
-  :local(.minute),
-  :local(.second) {
-    border: 2px solid rgb(102, 0, 0);
-    font-size: 20px;
-  }
+    
 }
 @media only screen and (min-width: 600px) {
   h1,
   h2 {
     font-size: 30px;
-  }
-  :local(.day),
-  :local(.hour),
-  :local(.minute),
-  :local(.second) {
-    border: 2px solid rgb(102, 0, 0);
-    font-size: 30px;
+  
+}
+:local(.group) {
+    
+    
+   
   }
 }
-
 @media only screen and (min-width: 900px) {
   h1,
   h2 {
     font-size: 40px;
   }
-  :local(.day),
-  :local(.hour),
-  :local(.minute),
-  :local(.second) {
-    border: 3px solid rgb(102, 0, 0);
-    font-size: 40px;
+  :local(.group) {
+    
+   
+   
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -108,11 +119,9 @@ h2 {
   h2 {
     font-size: 50px;
   }
-  :local(.day),
-  :local(.hour),
-  :local(.minute),
-  :local(.second) {
-    border: 3px solid rgb(102, 0, 0);
-    font-size: 50px;
+  :local(.group) {
+    
+    
+   
   }
 }
