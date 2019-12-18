@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import styles from "../css/Login.module.css";
 import Footer from "./Footer";
-import localstorage from "reactjs-localstorage";
+//import localstorage from "reactjs-localstorage";
 import axios from "axios";
 const Login = () => {
   //const [user, setuser] = useState([]);
