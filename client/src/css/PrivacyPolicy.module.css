@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+:local(.wrapper){
+  width:100%;
+
+}
+  :local(.container){
+    margin-top:12vh;
+height: 100vh;
+background-size: cover;
+  }
+
+  :local(.headingOne){
+    margin-top:15px;
+    margin-left:20px;
+    font-size: 24px;
+}
+
+:local(.paragraphs){
+    margin-top: 10px;
+}
+
+:local(.para){
+  margin: 20px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  font-size: 19px;
+}
+
+@media (max-width: 1000px){
+  :local(.headingOne){
+    margin-top:8px;
+    margin-left:20px;
+    font-size: 22px;
+}
+
+  :local(.para){
+    margin: 20px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+       
+}
+
+@media (max-width: 800px){
+  :local(.headingOne){
+    margin-top:3px;
+    margin-left:20px;
+    font-size: 20px;
+}
+
+  :local(.para){
+    margin: 20px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-size: 17px;
+  }
+      
+}
+
+@media (max-width: 600px){
+  :local(.headingOne){
+    margin-top:3px;
+    margin-left:20px;
+    font-size: 18px;
+}
+
+  :local(.para){
+    margin: 20px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+    
+    }
