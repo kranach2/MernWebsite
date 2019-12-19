@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 import styles from "../css/Resume.module.css";
-
+import "@fortawesome/fontawesome-free/css/all.min.css";
 const Resume = () => {
   return (
     <div className={styles.wrapper}>

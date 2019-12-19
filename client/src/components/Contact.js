@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "../css/Contact.module.css";
 import Footer from "./Footer";
-
+import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const Contact = () => {
   return (
