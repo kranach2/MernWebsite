@@ -19,19 +19,22 @@ const Contact = () => {
         <i>Connect with me </i>
       </div>
       <div className={styles.socialIcon}>
-        <a className={styles.socialLink} href="www.facebook.com">
+        <a className={styles.socialLink} href="https://www.facebook.com/"
+            target="_self">
           <i
             style={{ color: "rgb(59, 89, 152)" }}
             className="fab fa-facebook"
           ></i>
         </a>
-        <a className={styles.socialLink} href="www.facebook.com">
+        <a className={styles.socialLink} href="https://www.instagram.com/"
+            target="_self">
           <i
             style={{ color: "rgb(247,119,55)" }}
             className="fab fa-instagram"
           ></i>
         </a>
-        <a className={styles.socialLink} href="www.facebook.com">
+        <a className={styles.socialLink} href="https://www.linkedin.com/"
+            target="_self">
           <i
             style={{ color: "rgb(40,103,178)" }}
             className="fab fa-linkedin"

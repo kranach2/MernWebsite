@@ -12,7 +12,7 @@ width:100%;
 height: 100vh;
 background-image: linear-gradient(rgba(99, 110, 114, 0.7), rgba(45, 52, 54, 0.8), rgba(178, 190, 195, 0.5)), url("../images/kishor.jpg");
 background-size: cover;
-filter: grayscale(70%);
+filter: grayscale(50%);
 }
 
 :local(.textOne){
@@ -59,7 +59,7 @@ font-size: 60px;
   :local(.imageTwo img){
   width:100%;
   height: 100%;
-  filter:grayscale(70%);
+  filter:grayscale(50%);
   }
   
   :local(.paraTwo){
@@ -93,15 +93,15 @@ font-size: 60px;
         flex-wrap: nowrap;
         flex-direction: column;
         justify-content: center;
-        margin-top: -20px;
+        margin-top: -50px;
       }
 
-      :local(.textTwo)
-       {
-        width: 100%;
+      :local(.textTwo) {
+        width: 80%;
+        margin-left: 10%;
         height: auto;
-        margin-left: -5px;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
+          
       }
 
       :local(.headingTwo){
@@ -110,9 +110,8 @@ font-size: 60px;
         font-size:30px;
       }
 
-      :local(.paraTwo)
-       {
-        font-size: 18px;
+      :local(.paraTwo) {
+        font-size: 20px;
         line-height: 30px;
         letter-spacing: 1px;
       }
@@ -121,7 +120,7 @@ font-size: 60px;
        {
         width: 80%;
         margin-left: 10%;
-        height: 600px;
+        height: 500px;
         border: 2px solid black;
         overflow: hidden;
       }
@@ -159,15 +158,16 @@ font-size: 60px;
         flex-wrap: nowrap;
         flex-direction: column;
         justify-content: center;
-        margin-top: -20px;
+        margin-top: -50px;
+        
       }
 
-      :local(.textTwo)
-       {
-        width: 100%;
+      :local(.textTwo) {
+        width: 80%;
+        margin-left: 10%;
         height: auto;
-        margin-left: -5px;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
+          
       }
 
       :local(.headingTwo){
@@ -176,9 +176,8 @@ font-size: 60px;
         font-size:28px;
       }
 
-      :local(.paraTwo)
-       {
-        font-size: 16px;
+      :local(.paraTwo) {
+        font-size: 18px;
         line-height: 28px;
         letter-spacing: 1px;
       }
@@ -187,7 +186,7 @@ font-size: 60px;
        {
         width: 80%;
         margin-left: 10%;
-        height: 500px;
+        height: 400px;
         border: 2px solid black;
         overflow: hidden;
       }
@@ -225,27 +224,24 @@ font-size: 60px;
             flex-wrap: nowrap;
             flex-direction: column;
             justify-content: center;
-            margin-top: -20px;
+            margin-top: -50px;
           }
           
-          :local(.textTwo)
-           {
-            width: 100%;
+          :local(.textTwo) {   
+            width: 80%;
+            margin-left: 10%;
             height: auto;
-            margin-left: -5px;
             margin-bottom: 20px;
-          }
-
+            }
           :local(.headingTwo){
             width: 100%;
             text-align: center;
             font-size:25px;
-            margin-left: -15px;
+            
           }
 
-          :local(.paraTwo)
-           {
-            font-size: 15px;
+          :local(.paraTwo) {
+            font-size: 16px;
             line-height: 25px;
             letter-spacing: 1px;
           }
@@ -254,7 +250,7 @@ font-size: 60px;
            {
             width: 80%;
             margin-left: 10%;
-            height: 400px;
+            height: 300px;
             border: 2px solid black;
             overflow: hidden;
           }

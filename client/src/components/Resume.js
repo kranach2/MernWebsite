@@ -19,8 +19,7 @@ const Resume = () => {
             since early years of schools which motivated me to pursue career in
             this field, specially in web developemnt. Hands-on experience in web
             development including both frontend and backend. In spite of having
-            web development skills, I have 3 months of experience working in
-            government organisation (Venueswest ICT Management Branch) as a ICT
+            web development skills, I have 3 months of experience as a ICT
             support officer. Currently seeking an entry-level opportunity where
             I can use my web development skills and knowledge to resolve
             client's web related problems. Being passionate about web
@@ -220,7 +219,7 @@ const Resume = () => {
           <p className={styles.para}>
             <i className="fas fa-list fa-xs "></i> Good command of structured query
             language for storing, manipulating and retrieving data in databases
-            (Select, Insert, Update, Delete, Join and so on
+            (Select, Insert, Update, Delete, Join) and so on
           </p>
           <p className={styles.para}>
             <i className="fas fa-list fa-xs "></i> Thorough understanding of MongoDB
@@ -238,7 +237,7 @@ const Resume = () => {
           </p>
           <p className={styles.para}>
             <i className="fas fa-list fa-xs "></i> Comprehensive understanding of
-            Restful API for Get, Put, Post, Delete data using http requests.
+            Restful API along with Get, Put, Post, Delete operations. 
           </p>
           <p className={styles.para}>
             <i className="fas fa-list fa-xs "></i> Good insight of Version Control-
@@ -258,7 +257,7 @@ const Resume = () => {
             <i className="fas fa-list fa-xs "></i> Has been working with HTML and  CSS3 for design and layout.
           </p>
           <p className={styles.para}>
-            <i className="fas fa-list fa-xs "></i> Hands on experience to make normal website to responsive that can well fit into mobile and tablet.
+            <i className="fas fa-list fa-xs "></i> Hands on experience to make regular website to responsive that can well fit into mobile and tablet.
           </p>
           <p className={styles.para}>
             <i className="fas fa-list fa-xs "></i> Day to day work on React. Created own personal website using Reactjs.
@@ -274,7 +273,7 @@ const Resume = () => {
           
           <p className={styles.para}>
             
-            <i className="fas fa-list fa-xs "></i> Redux for state managment and axios for http request from node.js
+            <i className="fas fa-list fa-xs "></i> Redux for state managment and axios for http request to backend.
           </p>
 
           <h3 className={styles.headingThree}>Backend:</h3>
@@ -477,16 +476,13 @@ const Resume = () => {
             Fortress by Dan Brown, is one of my favourites)
           </p>
           <p className={styles.para}>
-            <i className="fas fa-list fa-xs"></i> Travelling (Explored many places
-            of WA, yet few are left)
+            <i className="fas fa-list fa-xs"></i> Travelling 
           </p>
           <p className={styles.para}>
-            <i className="fas fa-list fa-xs"></i> Cycling (Weekend ride boost me to
-            another level)
+            <i className="fas fa-list fa-xs"></i> Cycling 
           </p>
           <p className={styles.para}>
-            <i className="fas fa-list fa-xs"></i> Videos games (FIFA and COD alltime
-            favourites)
+            <i className="fas fa-list fa-xs"></i> Videos games 
           </p>
         </div>
 
@@ -499,12 +495,8 @@ const Resume = () => {
             <i className="fas fa-list fa-xs"></i> Full Time Availability
           </p>
         </div>
-        <div className={styles.text}>
-          <h1 className={styles.heading}>Referees</h1>
-          <p className={styles.para}>
-            <i className="fas fa-list fa-xs"></i> Provided on request
-          </p>
-        </div>
+        
+        
       </div>
       <Footer />
     </div>
