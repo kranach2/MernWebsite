@@ -24,7 +24,7 @@ const Home = () => {
 
       <div className={styles.containerTwo}>
       <div className={styles.textTwo}>
-        <p className={styles.paraTwo}>This website aims to introduce myself and showcase my skills, knowledge and experience. Moreover, as we know, sharing is caring, it also contains blog on javascript and its frameworks including both front and backend that will help to share knowledge that I have in particular field. I have comment section as well to make it more interactive and to correct myself if there are any errors with reader's feedback.   </p>
+        <p className={styles.paraTwo}>This website aims to introduce myself and showcase my skills, knowledge and experience. Moreover, as we know, sharing is caring, it also contains blog on javascript and its frameworks including both front and backend. I will post blogs on different topics based on my knowledge and experience. I have comment section as well to make it more interactive and readers can express their opinions regarding particular topics.</p>
         </div>
         <div className={styles.imageTwo}>
             <img src={Javascript_Code} alt="Pic1"/>
@@ -33,7 +33,7 @@ const Home = () => {
 
 <div className={styles.midsection}>
   <h1 className={styles.midHeading}>Build Full Stack Website with me</h1>
-  <p className={styles.midpara}>I can build interactive website that has both frontend and backend. With hands on experience with PHP and wordpress, I have already developed some websites. As there is increasing demand of skilled person in web development. I have prepared myself with the latest technology and tools. Similarly, I now have skills in  MongoDB, Express, React and Node which is in combined called MERN stack. With these skills, I can build full stack interactive website for small businesses to medium businesses. </p>
+  <p className={styles.midpara}>I can build interactive website that has both frontend and backend. With hands on experience with PHP and wordpress, I have already developed some websites. As there is increasing demand of skilled person in web development, I have prepared myself with the latest technology and tools. Similarly, I now have skills in  MongoDB, Express, React and Node which is in combined called MERN stack. With these skills, I can build full stack interactive website for small businesses to medium businesses. </p>
    <button className={styles.button}><Link className={styles.link} to="/resume">View my Resume</Link></button>
 </div>
 

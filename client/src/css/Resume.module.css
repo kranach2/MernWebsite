@@ -10,22 +10,66 @@
     margin-top:3vh;
 position: relative;
 width:100%;
-height: 100vh;
-background-image: linear-gradient(rgba(99, 110, 114, 0.7), rgba(45, 52, 54, 0.8), rgba(178, 190, 195, 0.5)), url("../images/Resume_bg.JPG");
+height: 50vh;
+background-image: linear-gradient(rgba(99, 110, 114, 0.7), rgba(45, 52, 54, 0.8), rgba(178, 190, 195, 0.5));
 background-size: cover;
 filter: grayscale(50%);
 }
 
 :local(.textOne){
   position: absolute;
-  margin-top:50vh;
+  margin-top:25vh;
   width:100%;
   text-align:center;
   color:rgb(255, 255, 255);
 }
 
-:local(.headingOne){
-font-size: 50px;
+
+
+
+:local(.headingOne) {
+  display: block;
+  font-size: 60px;
+  visibility: visible;
+    opacity: 1;
+  animation-name: headingOne;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: -1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes headingOne {
+  0% {
+    
+    transform:  rotateX(180deg);
+  }
+  40% {
+    transform: scale(1.3);
+  }
+  60% {
+
+    transform: scale(1.4);
+  }
+  80% {
+
+    transform: scale(1.5);
+  }
+
+  99% {
+    
+    opacity: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(1.6);
+  }
+
+  100% {
+    
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.3);
+  }
 }
 
 :local(.containerTwo){
@@ -93,7 +137,7 @@ font-size: 50px;
     
     :local(.textOne){
       position: absolute;
-      margin-top:50vh;
+      margin-top:25vh;
       width:100%;
       text-align:center;
       color:rgb(255, 255, 255);
@@ -183,7 +227,7 @@ font-size: 50px;
     
     :local(.textOne){
       position: absolute;
-      margin-top:50vh;
+      margin-top:25vh;
       width:100%;
       text-align:center;
       color:rgb(255, 255, 255);
@@ -266,13 +310,11 @@ font-size: 50px;
 }
 
 @media (max-width: 600px){
-  :local(.containerOne){
-background-size: 100% 100%; 
-}
+  
 
 :local(.textOne){
   position: absolute;
-  margin-top:50vh;
+  margin-top:25vh;
   width:100%;
   text-align:center;
   color:rgb(255, 255, 255);

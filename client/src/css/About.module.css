@@ -16,16 +16,61 @@ filter: grayscale(50%);
 }
 
 :local(.textOne){
-    position: absolute;
+    position: relative;
     top:50%;
-    left:40%;  
+     
     text-align:center;
     color:rgb(255, 255, 255);
 }
 
-:local(.headingOne){
-font-size: 60px;
+
+:local(.headingOne) {
+  display: block;
+  font-size: 60px;
+  visibility: visible;
+  opacity: 1;
+  animation-name: headingOne;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-delay: -1s;
+  animation-iteration-count: 1;
 }
+
+@keyframes headingOne {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    transform: rotateY(180deg);
+  }
+  40% {
+    transform: scale(1.3);
+  }
+  60% {
+  
+    transform: scale(1.4);
+  }
+  80% {
+    color:#686de0;
+  
+    transform: scale(1.5);
+  }
+  90% {
+    
+    transform: scale(1.4);
+  }
+  99% {
+    
+    opacity: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(1.3);
+  }
+  100% {
+    
+    transform: scale(1.2);
+  }
+}
+
 
 :local(.paraOne){
     font-size: 20px;
@@ -70,6 +115,11 @@ font-size: 60px;
   }
 
   @media (max-width: 1000px){
+    :local(.containerOne){
+      background-position: center;
+      background-size: 100% 100%;
+    } 
+
     :local(.textOne){
       position: absolute;
       top:50%;
@@ -135,6 +185,10 @@ font-size: 60px;
       
   }
   @media (max-width: 800px){
+    :local(.containerOne){
+      background-position: center;
+      background-size: 100% 100%;
+    } 
     :local(.textOne){
       position: absolute;
       top:50%;
@@ -201,7 +255,11 @@ font-size: 60px;
        
   }
 
-  @media (max-width: 600px){      
+  @media (max-width: 600px){  
+    :local(.containerOne){
+      background-position: center;
+      background-size: 100% 100%;
+    }    
       :local(.textOne){
           position: absolute;
           top:50%;
@@ -211,7 +269,7 @@ font-size: 60px;
       }
 
       :local(.headingOne){
-        font-size: 40px;
+        font-size: 30px;
         }
       :local(.paraOne){
           font-size: 16px;

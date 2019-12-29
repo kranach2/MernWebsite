@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import styles from "../css/Rmenu.module.css";
 
 const Rmenu = () => {
+
+ 
+
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
@@ -30,6 +33,7 @@ const Rmenu = () => {
             Resume
           </Link>
         </li>
+        
         <li>
           <Link className={styles.link} to="/contact">
             Contact

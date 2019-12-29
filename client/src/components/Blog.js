@@ -27,12 +27,32 @@ const Blog = () => {
           <p className={styles.para}>
             Arrow function is ES6 feature which is replacement of regular
             function. It's syntax is simple and easy to comprehend.
-            <pre>
-            Syntax: () => &#123;
-
-            &#125;
-</pre>
-        It always returns value.
+          <br/><br/>
+            Syntax: <b>(&nbsp;)&nbsp; => &nbsp; &#123;
+            &nbsp; statement
+            &nbsp; &#125;</b>
+            <br/><br/>
+            If we have only one parameter, the parantheses are optional. We can simply write: 
+            <br/>
+            <b> parameter => &nbsp; &#123; statements &nbsp; &#125;</b>
+            <br/> <br/>
+            If we are returning an expression, there is no need of curly brackets.
+            <br/>
+            <b>parameter => expression</b>
+            <br/><br/>
+            Let's take an example with just one parameter:
+            <br/>
+            <b>const sum = number => number + 10;</b>
+            <br/><br/>
+            Since, we have just one parameter, we have omitted the parantheses and we are returning value of number * 10, curly brackets around the expression have also been removed.
+            <br/>
+            If we call the above function, we will get the following results.
+            <br/>
+            <b> sum(5); // 15</b> <br/>
+            <b>sum(10); // 20 </b> <br/>
+            <b>sum(15); // 25 </b>
+<br/>
+        
           </p>
         </div>
       </div>
