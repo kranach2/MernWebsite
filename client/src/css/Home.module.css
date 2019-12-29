@@ -161,7 +161,7 @@
   width: 100%;
   color: rgb(255, 255, 255);
   animation-name: quote;
-  animation-duration: 10s;
+  animation-duration: 15s;
   animation-timing-function: linear;
   animation-delay: 13s;
   animation-iteration-count: infinite; 
