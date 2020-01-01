@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "./Footer";
 import styles from "../css/About.module.css";
-import kishor_Pic from "../images/kishor_Pic.jpg";
+import kishor_Pic from "../images/kishor_pic.JPG";
 const About = () => {
   return (
     <div className={styles.wrapper}>

@@ -10,7 +10,7 @@ const TermsOfService = () => {
         <h1 className={styles.headingOne}>Terms of Service</h1>
             <div className={styles.paragraphs}>
             <p className={styles.para}><i style={{ color: "#8395a7" }}     className="fas fa-hand-point-right"></i> Please read these Terms of Service carefully before using the
-http://www.kishorranachhetri.com  website. These Terms apply to all visitors, users and others who access or use the Service.</p>
+www.iamkishor.info website. These Terms apply to all visitors, users and others who access or use the Service.</p>
            <p className={styles.para}><i style={{ color: "#8395a7" }} className="fas fa-hand-point-right"></i> By accessing or using the Service you agree to be bound by these Terms. If you disagree
 with any part of the terms then you may not access the Service.</p>
            <p className={styles.para}><i style={{ color: "#8395a7" }} className="fas fa-hand-point-right"></i> We may terminate or suspend access to our Service immediately, without prior notice or liability, for
