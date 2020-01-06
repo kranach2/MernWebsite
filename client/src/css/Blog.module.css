@@ -9,7 +9,7 @@
     height:100vh;
   }
   
-  :local(.blogSection){
+  :local(.blog_section){
     border: 1px solid sienna;
     height:auto;
    
@@ -41,14 +41,14 @@
     text-align:center;
   }
 
-  :local(.tableHeader){
+  :local(.table_header){
     font-size: 25px;
     margin-top:10px;
     margin-bottom: 10px;
     color:rgba(45, 52, 54,1.0);
   }
 
-  :local(.tableData){
+  :local(.table_data){
     font-size: 20px;
     padding: 10px;
   }
@@ -57,35 +57,37 @@
     font-size: 12px;
   }
 
-  :local(.buttonDiv){
-    margin-bottom: 100px;
-  }
-
-  :local(.button) {
-    margin-top: 50px;
-    width: 150px;
-    height: 50px;
-    border-radius: 30px;
-    padding: 10px;
-    background-color: #576574;
-    font-size: 20px;
-    transition: all 2s linear;
-  }
-
-  :local(.button:hover) {
-    background-color: #30336b;
-    transform: scale(1.2);
-  }
-
-  :local(.link) {
-    text-decoration: none;
-    color: white;
-  }
+  :local(.links){
+    text-align: center;
+    display: block;
+     margin-bottom: 100px;
+   }
+ 
+   :local(.link_one),
+   :local(.link_two){
+     width:10%;
+     text-decoration: none;
+     color:blue;
+     font-size: 20px;
+     transition: all 1s linear;
+   }
+   
+   :local(.link_one:hover),
+   :local(.link_two:hover){
+     width:20%;
+     text-decoration: none;
+    color:red;
+     transform: scale(1.3);
+   }
+ 
+     :local(.link_para){
+       font-size: 20px;
+     }
   
   
   @media (max-width: 1000px){
   
-    :local(.blogSection){
+    :local(.blog_section){
       margin-top:60px;
       margin-left:20px;
       margin-right:20px;  
@@ -108,14 +110,14 @@
       margin-bottom: 20px;
     }
 
-    :local(.tableHeader){
+    :local(.table_header){
       font-size: 24px;
       margin-top:10px;
       margin-bottom: 10px;
       color:rgba(45, 52, 54,1.0);
     }
   
-    :local(.tableData){
+    :local(.table_data){
       font-size: 18px;
       padding: 10px;
     }
@@ -123,18 +125,10 @@
     :local(.span){
       font-size: 13px;
     }
-
-    :local(.buttonDiv){
-      margin-bottom: 100px;
-    }
-
-    :local(.button) {
-      font-size: 16px;
-      
-    }
   }
+  
   @media (max-width: 800px){
-    :local(.blogSection){
+    :local(.blog_section){
       margin-top:60px;
       margin-left:20px;
       margin-right:20px;  
@@ -157,34 +151,26 @@
       margin-bottom: 20px;
     }
 
-    :local(.tableHeader){
+    :local(.table_header){
       font-size: 22px;
       margin-top:10px;
       margin-bottom: 10px;
       color:rgba(45, 52, 54,1.0);
     }
   
-    :local(.tableData){
+    :local(.table_data){
       font-size: 16px;
       padding: 10px;
     }
     
     :local(.span){
       font-size: 12px;
-    }
-
-    :local(.buttonDiv){
-      margin-bottom: 100px;
-    }
-
-    :local(.button) {
-      font-size: 16px; 
     }
 
   }
 
   @media (max-width: 600px){
-    :local(.blogSection){
+    :local(.blog_section){
       margin-top:60px;
       margin-left:20px;
       margin-right:20px;  
@@ -207,28 +193,20 @@
       margin-bottom: 20px;
     }
 
-    :local(.tableHeader){
+    :local(.table_header){
       font-size: 22px;
       margin-top:10px;
       margin-bottom: 10px;
       color:rgba(45, 52, 54,1.0);
     }
   
-    :local(.tableData){
+    :local(.table_data){
       font-size: 16px;
       padding: 10px;
     }
     
     :local(.span){
       font-size: 12px;
-    }
-
-    :local(.buttonDiv){
-      margin-bottom: 100px;
-    }
-
-    :local(.button) {
-      font-size: 16px; 
     }
   
       }

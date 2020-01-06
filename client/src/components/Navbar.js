@@ -1,14 +1,10 @@
-import React, {useState} from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link} from "react-router-dom";
 import styles from "../css/Navbar.module.css";
 import pic from "../images/logo.png";
 
-const Navbar = () => {
-  const [change, setchange] = useState(false);
-  const handleClick = ()=>{
-    setchange(!change);
-    console.log(!change);
-    }
+const Navbar = (props) => {
+  
   return (
       <div className={styles.parent}>
     <div className={styles.navbar}>
@@ -45,8 +41,8 @@ const Navbar = () => {
           </Link>
         </li>
         <li>  
-          <Link onClick={handleClick} className={styles.link } to={change ?  ""  : "/rmenu" } >
-          <i className= {change ?  "fas fa-times" :"fas fa-bars"}></i>
+          <Link onClick={props.handleClick}>
+          <i className="fas fa-bars "></i>
           </Link>
         </li>
       </ul>

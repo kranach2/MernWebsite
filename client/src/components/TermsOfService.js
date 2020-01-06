@@ -7,7 +7,7 @@ const TermsOfService = () => {
         <div className={styles.wrapper}>
         <div className={styles.container}>
           
-        <h1 className={styles.headingOne}>Terms of Service</h1>
+        <h1 className={styles.heading_one}>Terms of Service</h1>
             <div className={styles.paragraphs}>
             <p className={styles.para}><i style={{ color: "#8395a7" }}     className="fas fa-hand-point-right"></i> Please read these Terms of Service carefully before using the
 www.iamkishor.info website. These Terms apply to all visitors, users and others who access or use the Service.</p>

@@ -5,7 +5,7 @@ import styles from "../css/PrivacyPolicy.module.css";
     return (
         <div className={styles.wrapper}>
         <div className={styles.container}>
-            <h1 className={styles.headingOne}>Privacy Policy</h1>
+            <h1 className={styles.heading_one}>Privacy Policy</h1>
             <div className={styles.paragraphs}>
             <p className={styles.para}><i style={{ color: "#8395a7" }}     className="fas fa-hand-point-right"></i> This website - www.iamkishor.info (www.kishorranachhetri.herokuapp.com) is purely personal and not-for-profit website that respects your right to privacy and is committed to safegaurding the privacy of our website visitors. This policy sets out how we collect and treat your personal information (information that we hold which is identifiable as being about you).</p>
            <p className={styles.para}><i style={{ color: "#8395a7" }} className="fas fa-hand-point-right"></i> By using this site, you agree to the privacy policy of this website.</p>

@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import styles from "../css/Login.module.css";
 import Footer from "./Footer";
+import { Redirect } from "react-router-dom";
+import Comment from "./Comment";
 //import localstorage from "reactjs-localstorage";
 import axios from "axios";
 const Login = () => {
@@ -46,27 +48,24 @@ const Login = () => {
 
     const error = validate();
     if (!error) {
-      const config={
-          headers:{
-              "Content-Type":"application/json"
-      }
-    }
+      
       const user = {
         email: email,
         password: password,
         
       };
     
-      axios.post("userauthentication", user, config).then(res => { 
-        console.log(res.data);
+      axios.post("userauthentication", user).then(res => { 
+        console.log(res.data.user.firstname);
         setemailError("");
         setpasswordError("");        
         setpassword("");
         setemail("");
         setmessage("Logged in succesfully!");
-         
+        
       });
     }
+    
   };
 
   return (

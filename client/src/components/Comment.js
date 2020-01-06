@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import styles from "../css/Comment.module.css";
 
@@ -29,16 +28,7 @@ const handleSubmit= (e)=>{
           <button className={styles.submitComment} type="submit" >Submit</button>
         </form>
       </div>
-      <div className={styles.links}>
-        <p className={styles.linkPara}>To comment:</p>
-        <Link className={styles.linkOne} to="/register">
-          Register
-        </Link>{" "}
-        or &nbsp;
-        <Link className={styles.linkTwo} to="/login">
-          Log In
-        </Link>
-      </div>
+      
 </div>
       <Footer />
     </div>

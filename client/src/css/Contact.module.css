@@ -5,7 +5,7 @@
     height: 100vh; 
   }
 
-:local(.containerOne){
+:local(.container_one){
 margin-top:5vh;
 position: relative;
 width:100%;
@@ -15,7 +15,7 @@ background-size: cover;
 filter: grayscale(70%); 
 }
 
-:local(.textOne){
+:local(.text_one){
     position: absolute;
     margin-top:50vh;
     width:100%;
@@ -23,29 +23,29 @@ filter: grayscale(70%);
     color:rgb(255, 255, 255);
 }
 
-:local(.headingOne){
+:local(.heading_one){
 font-size: 50px;
 }
 
-:local(.paraOne){
+:local(.para_one){
     font-size: 20px;
     }
 
-    :local(.connectOne){
+    :local(.connect_one){
         margin-top:100px;
         margin-bottom: 20px;
         text-align: center;
         font-size: 30px;
     }
 
-    :local(.connectTwo){
+    :local(.connect_two){
         margin-top:20px;
         margin-bottom: 20px;
         text-align: center;
         font-size: 30px;
     }
 
-    :local(.contactIcon){
+    :local(.contact_icon){
         margin-top:20px;
         margin-bottom: 50px;
         text-align: center;
@@ -67,14 +67,14 @@ font-size: 50px;
     font-size: 15px;
 }
 
-    :local(.socialIcon){
+    :local(.social_icon){
         height:100px;
         display: flex;
         justify-content: center;
         align-content: center;
     }
     
-    :local(.socialLink){
+    :local(.social_link){
         width: 50px;
         height:50px;
         background-color:rgba(223, 230, 233, 0.7);
@@ -85,22 +85,22 @@ font-size: 50px;
         box-shadow: 1px 4px 2px 2px #b2bec3b3 ;
     }
 
-    :local(.socialLink i){
+    :local(.social_link i){
         transition: all 0.3s linear; 
     }
 
-    :local(.socialLink:hover i){
+    :local(.social_link:hover i){
         transform:scale(1.4);
     }
     
     
     @media (max-width: 1000px){
-        :local(.containerOne){
+        :local(.container_one){
             margin-top:5vh;
         
         }
 
-        :local(.textOne){
+        :local(.text_one){
             position: absolute;
             margin-top:40vh;
             width:100%;
@@ -108,41 +108,41 @@ font-size: 50px;
             color:rgb(255, 255, 255);
         }
 
-        :local(.headingOne){
+        :local(.heading_one){
         font-size: 38px;
         }
 
-        :local(.paraOne){
+        :local(.para_one){
             font-size: 20px;
             }
         
-            :local(.connectOne){
+            :local(.connect_one){
                 margin-top:100px;
                 margin-bottom: 20px;
                 text-align: center;
                 font-size: 28px;
             }
 
-            :local(.connectTwo){
+            :local(.connect_two){
                 margin-top:20px;
                 margin-bottom: 20px;
                 text-align: center;
                 font-size: 28px;
             }
 
-            :local(.contactIcon){
+            :local(.contact_icon){
                
                 margin-bottom: 100px;    
             }
 
-            :local(.socialIcon){
+            :local(.social_icon){
                 height:90px;
                 display: flex;
                 justify-content: center;
                 align-content: center;
             }
 
-            :local(.socialLink){
+            :local(.social_link){
                 width: 44px;
                 height:44px;
                 background-color:rgba(223, 230, 233, 0.7);
@@ -156,11 +156,11 @@ font-size: 50px;
 
     @media (max-width: 800px){
         
-        :local(.containerOne){
+        :local(.container_one){
             margin-top:5vh;
         }
 
-        :local(.textOne){
+        :local(.text_one){
             position: absolute;
             margin-top:40vh;
             width:100%;
@@ -168,38 +168,38 @@ font-size: 50px;
             color:rgb(255, 255, 255);
         }
 
-        :local(.headingOne){
+        :local(.heading_one){
         font-size: 35px;
         }
 
-        :local(.paraOne){
+        :local(.para_one){
             font-size: 18px;
             }
         
-            :local(.connectOne){
+            :local(.connect_one){
                 margin-top:100px;
                 margin-bottom: 20px;
                 text-align: center;
                 font-size: 25px;
             }
-            :local(.connectTwo){
+            :local(.connect_two){
                 margin-top:20px;
                 margin-bottom: 20px;
                 text-align: center;
                 font-size: 25px;
             }
 
-            :local(.contactIcon){
+            :local(.contact_icon){
                 margin-bottom: 100px;  
             }
 
-            :local(.socialIcon){
+            :local(.social_icon){
                 height:80px;
                 display: flex;
                 justify-content: center;
                
             }   
-            :local(.socialLink){
+            :local(.social_link){
                 width: 40px;
                 height:40px;
                 background-color:rgba(223, 230, 233, 0.7);
@@ -212,11 +212,11 @@ font-size: 50px;
     }
 
     @media (max-width: 600px){
-        :local(.containerOne){
+        :local(.container_one){
             margin-top:5vh;
         }
 
-        :local(.textOne){
+        :local(.text_one){
             position: absolute;
             margin-top:40vh;
             width:100%;
@@ -224,42 +224,42 @@ font-size: 50px;
             color:rgb(255, 255, 255);
         }
 
-        :local(.headingOne){
+        :local(.heading_one){
         font-size: 30px;
         }
 
-        :local(.paraOne){
+        :local(.para_one){
             font-size: 16px;
             }
         
-            :local(.connectOne){
+            :local(.connect_one){
                 margin-top:100px;
                 margin-bottom: 20px;
                 text-align: center;
                 font-size: 20px;
             }
 
-            :local(.connectTwo){
+            :local(.connect_two){
                 margin-top:20px;
                 margin-bottom: 20px;
                 text-align: center;
                 font-size: 20px;
             }
 
-            :local(.contactIcon){
+            :local(.contact_icon){
                
                 margin-bottom: 100px;
                 
             }
 
-            :local(.socialIcon){
+            :local(.social_icon){
                 height:60px;
                 display: flex;
                 justify-content: center;
                 align-content: center;
             }
 
-            :local(.socialLink){
+            :local(.social_link){
                 width: 30px;
                 height:30px;
                 background-color:rgba(223, 230, 233, 0.7);

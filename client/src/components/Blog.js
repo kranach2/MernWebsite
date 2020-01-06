@@ -22,7 +22,7 @@ const Blog = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>
-        <div className={styles.blogSection}>
+        <div className={styles.blog_section}>
           <h1 className={styles.heading}>Arrow Function </h1>
           <p className={styles.para}>
             Arrow function is ES6 feature which is replacement of regular
@@ -61,7 +61,7 @@ const Blog = () => {
         <table className={styles.table}>
           <thead>
             <tr>
-              <th className={styles.tableHeader}>Comments</th>
+              <th className={styles.table_header}>Comments</th>
             </tr>
           </thead>
 
@@ -69,7 +69,7 @@ const Blog = () => {
             return (
               <tbody key={comments._id}>
                 <tr>
-                  <td className={styles.tableData}>  {comments.comment} &nbsp; &nbsp; &nbsp;<span className={styles.span}>-commented on: {moment(comments.commentDate.slice(0,10)).format("DD/MM/YY")}</span></td>
+                  <td className={styles.table_data}>  {comments.comment} &nbsp; &nbsp; &nbsp;<span className={styles.span}>-commented on: {moment(comments.commentDate.slice(0,10)).format("DD/MM/YY")}</span></td>
             
                 </tr>
               </tbody>
@@ -77,9 +77,16 @@ const Blog = () => {
           })}
         </table>
       </div>
-     <div className={styles.buttonDiv}>
-     <button className={styles.button}><Link className={styles.link} to="/add-comment">Add Comment</Link></button>
-     </div>
+      <div className={styles.links}>
+        <p className={styles.link_para}>To comment:</p>
+        <Link className={styles.link_one} to="/register">
+          Register
+        </Link>{" "}
+        or &nbsp;
+        <Link className={styles.link_two} to="/login">
+          Log In
+        </Link>
+      </div>
 
       <Footer />
     </div>

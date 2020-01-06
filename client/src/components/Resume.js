@@ -5,13 +5,13 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 const Resume = () => {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.containerOne}>
-        <div className={styles.textOne}>
-          <h1 className={styles.headingOne}>Know more about me </h1>
+      <div className={styles.container_one}>
+        <div className={styles.text_one}>
+          <h1 className={styles.heading_one}>Know more about me </h1>
         </div>
       </div>
 
-      <div className={styles.containerTwo}>
+      <div className={styles.container_two}>
         <div className={styles.text}>
           <h1 className={styles.heading}>Summary</h1>
           <p className={styles.para}>
@@ -21,35 +21,35 @@ const Resume = () => {
 
         <div className={styles.text}>
           <h1 className={styles.heading}>Technical Skills</h1>
-          <div className={styles.allList}>
-            <div className={styles.listOne}>
+          <div className={styles.all_list}>
+            <div className={styles.list_one}>
               <ul>
-                <li className={styles.listOneElement}>HTML5/CSS3</li>
-                <li className={styles.listOneElement}>JavaScript(ES6)</li>
-                <li className={styles.listOneElement}>React</li>
-                <li className={styles.listOneElement}>Redux</li>
-                <li className={styles.listOneElement}>Node</li>
-                <li className={styles.listOneElement}>SQL(MySQL)</li>
-                <li className={styles.listOneElement}>MongoDB</li>
-                <li className={styles.listOneElement}>Express</li>
-                <li className={styles.listOneElement}>PHP/WordPress</li>
-                <li className={styles.listOneElement}>xml/XSLT/XHTML</li>
-                <li className={styles.listOneElement}>JSON</li>
+                <li className={styles.list_one_element}>HTML5/CSS3</li>
+                <li className={styles.list_one_element}>JavaScript(ES6)</li>
+                <li className={styles.list_one_element}>React</li>
+                <li className={styles.list_one_element}>Redux</li>
+                <li className={styles.list_one_element}>Node</li>
+                <li className={styles.list_one_element}>SQL(MySQL)</li>
+                <li className={styles.list_one_element}>MongoDB</li>
+                <li className={styles.list_one_element}>Express</li>
+                <li className={styles.list_one_element}>PHP/WordPress</li>
+                <li className={styles.list_one_element}>xml/XSLT/XHTML</li>
+                <li className={styles.list_one_element}>JSON</li>
               </ul>
             </div>
-            <div className={styles.listTwo}>
+            <div className={styles.list_two}>
               <ul>
-                <li className={styles.listTwoElement}>CRUD Operations</li>
-                <li className={styles.listTwoElement}>REST API</li>
-                <li className={styles.listTwoElement}>Axios/Fetch</li>
-                <li className={styles.listTwoElement}>Bootstrap</li>
-                <li className={styles.listTwoElement}>Project Management</li>
-                <li className={styles.listTwoElement}>Version Control ( GIT )</li>
-                <li className={styles.listTwoElement}>Microsoft Visual Studio </li>
-                <li className={styles.listTwoElement}>MERN Stack app deployment</li>
-                <li className={styles.listTwoElement}>Responsive Layout and Design</li>
-                <li className={styles.listTwoElement}>Cross-Browser Compatibility</li>
-                <li className={styles.listTwoElement}>Exposure to Java and C++</li>
+                <li className={styles.list_two_element}>CRUD Operations</li>
+                <li className={styles.list_two_element}>REST API</li>
+                <li className={styles.list_two_element}>Axios/Fetch</li>
+                <li className={styles.list_two_element}>Bootstrap</li>
+                <li className={styles.list_two_element}>Project Management</li>
+                <li className={styles.list_two_element}>Version Control ( GIT )</li>
+                <li className={styles.list_two_element}>Microsoft Visual Studio </li>
+                <li className={styles.list_two_element}>MERN Stack app deployment</li>
+                <li className={styles.list_two_element}>Responsive Layout and Design</li>
+                <li className={styles.list_two_element}>Cross-Browser Compatibility</li>
+                <li className={styles.list_two_element}>Exposure to Java and C++</li>
               </ul>
             </div>
           </div>
@@ -110,12 +110,12 @@ const Resume = () => {
 
         <div className={styles.text}>
           <h1 className={styles.heading}>Work Experience</h1>
-          <h2 className={styles.headingTwo}>Full Stack Developer</h2>
-          <h4 className={styles.headingFour}>
+          <h2 className={styles.heading_two}>Full Stack Developer</h2>
+          <h4 className={styles.heading_four}>
             - Perth, Western Australia (current)
           </h4>
           <br />
-          <h3 className={styles.headingThree}>Frontend:</h3>
+          <h3 className={styles.heading_three}>Frontend:</h3>
           <p className={styles.para}>
             <i className="fas fa-list fa-xs "></i> Has been working with HTML and  CSS3 for design and layout.
           </p>
@@ -139,7 +139,7 @@ const Resume = () => {
             <i className="fas fa-list fa-xs "></i> Redux for state managment and axios for http request to backend.
           </p>
 
-          <h3 className={styles.headingThree}>Backend:</h3>
+          <h3 className={styles.heading_three}>Backend:</h3>
           <p className={styles.para}>
             
             <i className="fas fa-list fa-xs "></i> Has worked with Nodejs and it's framework, Express.
@@ -154,7 +154,7 @@ const Resume = () => {
             <i className="fas fa-list fa-xs "></i> Can perform CRUD opearation and thorough understanding of REST API.
           </p>
           
-          <h3 className={styles.headingThree}>Others</h3>
+          <h3 className={styles.heading_three}>Others</h3>
           <p className={styles.para}>
             
             <i className="fas fa-list fa-xs "></i> Have worked on version Control such as Git.
@@ -169,13 +169,13 @@ const Resume = () => {
           </p>
 
 
-          <h2 className={styles.headingTwo}>Information Technology Officer</h2>
-          <h4 className={styles.headingFour}>
+          <h2 className={styles.heading_two}>Information Technology Officer</h2>
+          <h4 className={styles.heading_four}>
             VenuesWest - Perth, Western Australia (May 2017 - July 2017)
           </h4>
           <br />
-          <h3 className={styles.headingThree}>Key Responsiblities:</h3>
-          <h4 className={styles.headingThree}>
+          <h3 className={styles.heading_three}>Key Responsiblities:</h3>
+          <h4 className={styles.heading_three}>
             System Maintenance and Security
           </h4>
           <p className={styles.para}>
@@ -210,7 +210,7 @@ const Resume = () => {
             awareness of security vulnerabilities and protection.
           </p>
 
-          <h4 className={styles.headingThree}>Software/Hardware Support</h4>
+          <h4 className={styles.heading_three}>Software/Hardware Support</h4>
           <p className={styles.para}>
             
             <i className="fas fa-list fa-xs "></i> Provided frontline end user
@@ -245,7 +245,7 @@ const Resume = () => {
             distributed as and when required.
           </p>
 
-          <h4 className={styles.headingThree}>Adminstrative Duties</h4>
+          <h4 className={styles.heading_three}>Adminstrative Duties</h4>
           <p className={styles.para}>
             
             <i className="fas fa-list fa-xs "></i> Ensured computer assests database

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState} from "react";
 import Navbar from "./Navbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Home";
@@ -15,10 +15,21 @@ import Rmenu from "./Rmenu";
 import ScrollToTop from 'react-router-scroll-top';
  
 function App() {
+  const [change, setchange] = useState(false);
+  const handleClick = ()=>{
+    setchange(!change);
+    console.log(!change);
+    }
+let rmenu; 
+
+if(change){
+  rmenu = <Rmenu handleClick={handleClick}/>;
+}
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Navbar handleClick={handleClick}/>
+        {rmenu}
         <ScrollToTop>
         <Switch>
           <Route exact path="/" component={Home} />
@@ -31,7 +42,6 @@ function App() {
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
           <Route path="/add-comment" component={Comment} />
-          <Route path="/rmenu" component={Rmenu} />
         </Switch>
         </ScrollToTop>
       </Router>

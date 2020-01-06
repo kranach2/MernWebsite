@@ -13,7 +13,7 @@
   height: 100vh;
 }
 
-:local(.containerOne) {
+:local(.container_one) {
   position: relative;
   margin-top: 3vh;
   width: 100%;
@@ -27,7 +27,7 @@
   background-size: cover;
 }
 
-:local(.textOne) {
+:local(.text_one) {
   position: absolute;
   margin-top: 50vh;
   width: 100%;
@@ -35,11 +35,11 @@
   color: rgb(255, 255, 255);
 }
 
-:local(.headingOne) {
+:local(.heading_one) {
   font-size: 30px;
 }
 
-:local(.headingSpan):nth-child(1) {
+:local(.heading_span):nth-child(1) {
   display: block;
   position: relative;
   visibility: hidden;
@@ -78,7 +78,7 @@
   }
 }
 
-:local(.headingSpan):nth-child(2) {
+:local(.heading_span):nth-child(2) {
   display: block;
   position: relative;
   visibility: hidden;
@@ -115,7 +115,7 @@
   }
 }
 
-:local(.headingSpan):nth-child(3) {
+:local(.heading_span):nth-child(3) {
     display: block;
     position: relative;
     visibility: hidden;
@@ -185,11 +185,11 @@
 :local(.italic) {
   margin-left: 10px;
 }
-:local(.paraOne) {
+:local(.para_one) {
   font-size: 25px;
 }
 
-:local(.containerTwo) {
+:local(.container_two) {
   margin-top: 10vh;
   width: 100%;
   height: 600px;
@@ -198,14 +198,14 @@
   align-content: center;
 }
 
-:local(.textTwo) {
+:local(.text_two) {
   width: 40%;
   margin-top: 100px;
   margin-left: 100px;
   margin-right: 100px;
 }
 
-:local(.imageTwo) {
+:local(.image_two) {
   width: 40%;
   height: 500px;
   margin-right: 5px;
@@ -213,25 +213,25 @@
   overflow: hidden;
 }
 
-:local(.imageTwo img) {
+:local(.image_two img) {
   width: 100%;
   height: 100%;
   filter: grayscale(50%);
   transition: all 1s;
 }
 
-:local(.imageTwo img:hover) {
+:local(.image_two img:hover) {
   transform: rotate(8deg) scale(1.3);
 }
 
-:local(.paraTwo) {
+:local(.para_two) {
   font-size: 17px;
   margin-top: 5px;
   line-height: 25px;
   letter-spacing: 1px;
 }
 
-:local(.containerThree) {
+:local(.container_three) {
   margin-top: 10vh;
   margin-bottom: 5vh;
   height: 600px;
@@ -240,14 +240,14 @@
   align-content: center;
 }
 
-:local(.textThree) {
+:local(.text_three) {
   width: 40%;
   margin-top: 100px;
   margin-left: 100px;
   margin-right: 100px;
 }
 
-:local(.imageThree) {
+:local(.image_three) {
   width: 40%;
   height: 500px;
   margin-left: 5px;
@@ -255,14 +255,14 @@
   overflow: hidden;
 }
 
-:local(.imageThree img) {
+:local(.image_three img) {
   width: 100%;
   height: 100%;
   transition: all 1s;
   filter: grayscale(50%);
 }
 
-:local(.imageThree img:hover) {
+:local(.image_three img:hover) {
   transform: rotate(8deg) scale(1.3);
 }
 
@@ -276,19 +276,19 @@
   text-align: center;
 }
 
-:local(.paraThree) {
+:local(.para_three) {
   margin-top: 5px;
   line-height: 25px;
   letter-spacing: 1px;
   font-size: 17px;
 }
 
-:local(.midHeading) {
+:local(.mid_heading) {
   margin-top: 20px;
   color: white;
 }
 
-:local(.midpara) {
+:local(.mid_para) {
   margin-top: 100px;
   margin-left: 100px;
   margin-right: 100px;
@@ -320,12 +320,12 @@
 }
 
 @media (max-width: 1000px){
-  :local(.containerOne) {
+  :local(.container_one) {
     background-position: center;
     background-size: 100% 100%;
 }
 
-:local(.headingOne) {
+:local(.heading_one) {
   font-size: 28px;
   font-weight: 28px;
 }
@@ -334,11 +334,11 @@ margin-left: 10px;
  font-size: 16px;
   
 }
-:local(.quotePara) {
+:local(.quote_para) {
   font-size: 22px;
 }
 
-:local(.containerTwo) {
+:local(.container_two) {
  margin-top: -80px;
   margin-bottom: 5vh;
   width: 100%;
@@ -349,7 +349,7 @@ margin-left: 10px;
   justify-content: center;
 }
 
-:local(.textTwo) {
+:local(.text_two) {
   width: 80%;
   margin-left: 10%;
   height: auto;
@@ -357,13 +357,13 @@ margin-left: 10px;
     
 }
 
-:local(.paraTwo) {
+:local(.para_two) {
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 1px;
 }
 
-:local(.imageTwo) {
+:local(.image_two) {
   width: 80%;
   margin-left: 10%;
   height: 500px;
@@ -371,18 +371,18 @@ margin-left: 10px;
   overflow: hidden;
 }
 
-:local(.imageTwo img) {
+:local(.image_two img) {
   width: 100%;
   height: 100%;
   filter: grayscale(50%);
   transition: all 1s;
 }
 
-:local(.imageTwo img:hover){
+:local(.image_two img:hover){
   transform: rotate(6deg) scale(1.2);
 }
 
-:local(.containerThree) {
+:local(.container_three) {
  
   margin-top: 5vh;
   margin-bottom: 5vh;
@@ -394,7 +394,7 @@ margin-left: 10px;
   justify-content: center; 
 }
 
-:local(.textThree) {
+:local(.text_three) {
  margin-top: 5px;
   width: 80%;
   margin-left: 10%;
@@ -402,13 +402,13 @@ margin-left: 10px;
   margin-bottom: 20px;    
 }
 
-:local(.paraThree) {
+:local(.para_three) {
   font-size: 20px;
   line-height: 28px;
   letter-spacing: 1px;
 }
 
-:local(.imageThree) {
+:local(.image_three) {
   width: 80%;
   margin-left: 10%;
   height: 500px;
@@ -416,14 +416,14 @@ margin-left: 10px;
   overflow: hidden;
 }
 
-:local(.imageThree img) {
+:local(.image_three img) {
   width: 100%;
   height: 100%;
   filter: grayscale(50%);
   transition: all 1s;
 }
 
-:local(.imageThree img:hover){
+:local(.image_three img:hover){
   transform: rotate(6deg) scale(1.2);
 }
 
@@ -437,13 +437,13 @@ margin-left: 10px;
   text-align: center;
 }
 
-:local(.midHeading) {
+:local(.mid_heading) {
   margin-top: 20px;
   font-size: 30px;
   color: white;
 }
 
-:local(.midpara) {
+:local(.mid_para) {
   width: 100%;
   margin-top: 20px;
   margin-left: -2px;
@@ -471,12 +471,12 @@ margin-left: 10px;
 }
 
 @media (max-width: 800px){
-  :local(.containerOne) {
+  :local(.container_one) {
     background-position: center;
     background-size: 100% 100%;
 }
 
-:local(.headingOne) {
+:local(.heading_one) {
   font-size: 28px;
   font-weight: 28px;
 }
@@ -485,11 +485,11 @@ margin-left: 10px;
  font-size: 16px;
   
 }
-:local(.quotePara) {
+:local(.quote_para) {
   font-size: 21px;
 }
 
-:local(.containerTwo) {
+:local(.container_two) {
  
   margin-bottom: 5vh;
   width: 100%;
@@ -500,7 +500,7 @@ margin-left: 10px;
   justify-content: center;
 }
 
-:local(.textTwo) {
+:local(.text_two) {
   width: 80%;
   margin-left: 10%;
   height: auto;
@@ -508,13 +508,13 @@ margin-left: 10px;
     
 }
 
-:local(.paraTwo) {
+:local(.para_two) {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 1px;
 }
 
-:local(.imageTwo) {
+:local(.image_two) {
   width: 80%;
   margin-left: 10%;
   height: 400px;
@@ -522,18 +522,18 @@ margin-left: 10px;
   overflow: hidden;
 }
 
-:local(.imageTwo img) {
+:local(.image_two img) {
   width: 100%;
   height: 100%;
   filter: grayscale(50%);
   transition: all 1s;
 }
 
-:local(.imageTwo img:hover){
+:local(.image_two img:hover){
   transform: rotate(6deg) scale(1.2);
 }
 
-:local(.containerThree) {
+:local(.container_three) {
   margin-top: 5vh;
   margin-bottom: 5vh;
   width: 100%;
@@ -544,20 +544,20 @@ margin-left: 10px;
   justify-content: center; 
 }
 
-:local(.textThree) {
+:local(.text_three) {
   width: 80%;
   margin-left: 10%;
   height: auto;
   margin-bottom: 20px;    
 }
 
-:local(.paraThree) {
+:local(.para_three) {
   font-size: 18px;
   line-height: 25px;
   letter-spacing: 1px;
 }
 
-:local(.imageThree) {
+:local(.image_three) {
   width: 80%;
   margin-left: 10%;
   height: 400px;
@@ -565,14 +565,14 @@ margin-left: 10px;
   overflow: hidden;
 }
 
-:local(.imageThree img) {
+:local(.image_three img) {
   width: 100%;
   height: 100%;
   filter: grayscale(50%);
   transition: all 1s;
 }
 
-:local(.imageThree img:hover){
+:local(.image_three img:hover){
   transform: rotate(6deg) scale(1.2);
 }
 
@@ -586,13 +586,13 @@ margin-left: 10px;
   text-align: center;
 }
 
-:local(.midHeading) {
+:local(.mid_heading) {
   margin-top: 20px;
   font-size: 30px;
   color: white;
 }
 
-:local(.midpara) {
+:local(.mid_para) {
   width: 100%;
   margin-top: 20px;
   margin-left: -2px;
@@ -621,12 +621,12 @@ margin-left: 10px;
 }
 
 @media (max-width: 600px){
-  :local(.containerOne) {
+  :local(.container_one) {
       background-position: center;
       background-size: 100% 100%;
   }
   
-  :local(.headingOne) {
+  :local(.heading_one) {
     font-size: 25px;
     font-weight: 25px;
   }
@@ -636,11 +636,11 @@ margin-left: 10px;
    font-size: 12px;
     
   }
-  :local(.quotePara) {
+  :local(.quote_para) {
     font-size: 16px;
   }
  
- :local(.containerTwo) {
+ :local(.container_two) {
   margin-bottom: 5vh;
   width: 100%;
   height: auto;
@@ -650,20 +650,20 @@ margin-left: 10px;
   justify-content: center; 
 }
 
-:local(.textTwo) {   
+:local(.text_two) {   
 width: 80%;
 margin-left: 10%;
 height: auto;
 margin-bottom: 20px;
 }
 
-:local(.paraTwo) {
+:local(.para_two) {
   font-size: 16px;
   line-height: 25px;
   letter-spacing: 1px;
 }
 
-:local(.imageTwo) {
+:local(.image_two) {
   width: 80%;
   margin-left: 10%;
   height: 300px;
@@ -671,18 +671,18 @@ margin-bottom: 20px;
   overflow: hidden;
 }
 
-:local(.imageTwo img) {
+:local(.image_two img) {
   width: 100%;
   height: 100%;
   filter: grayscale(50%);
   transition: all 1s;
 }
 
-:local(.imageTwo img:hover){
+:local(.image_two img:hover){
   transform: rotate(6deg) scale(1.2);
 }
 
-  :local(.containerThree) {
+  :local(.container_three) {
     margin-top: 5vh;
     margin-bottom: 5vh;
     width: 100%;
@@ -693,20 +693,20 @@ margin-bottom: 20px;
     justify-content: center; 
   }
   
-  :local(.textThree) {   
+  :local(.text_three) {   
   width: 80%;
   margin-left: 10%;
   height: auto;
   margin-bottom: 20px;
   }
 
-  :local(.paraThree) {
+  :local(.para_three) {
     font-size: 16px;
     line-height: 25px;
     letter-spacing: 1px;
   }
   
-  :local(.imageThree) {
+  :local(.image_three) {
     width: 80%;
     margin-left: 10%;
     height: 300px;
@@ -714,14 +714,14 @@ margin-bottom: 20px;
     overflow: hidden;
   }
 
-  :local(.imageThree img) {
+  :local(.image_three img) {
     width: 100%;
     height: 100%;
     filter: grayscale(50%);
     transition: all 1s;
   }
 
-  :local(.imageThree img:hover){
+  :local(.image_three img:hover){
     transform: rotate(6deg) scale(1.2);
   }
   
@@ -735,13 +735,13 @@ margin-bottom: 20px;
     text-align: center;
   }
   
-  :local(.midHeading) {
+  :local(.mid_heading) {
     margin-top: 20px;
     font-size: 25px;
     color: white;
   }
 
-  :local(.midpara) {
+  :local(.mid_para) {
     width: 100%;
     margin-top: 20px;
     margin-left: -2px;

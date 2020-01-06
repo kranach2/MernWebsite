@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import styles from "../css/Rmenu.module.css";
 
-const Rmenu = () => {
+const Rmenu = (props) => {
 
  
 
@@ -14,28 +14,28 @@ const Rmenu = () => {
           <div className={styles.rmenu}>
       <ul>
         <li>
-          <Link className={styles.link} to="/">
+          <Link onClick={props.handleClick} className={styles.link} to="/">
             Home
           </Link>
         </li>
         <li>
-          <Link className={styles.link} to="/about">
+          <Link onClick={props.handleClick} className={styles.link} to="/about">
             About
           </Link>
         </li>
         <li>
-          <Link className={styles.link} to="/blog">
+          <Link onClick={props.handleClick} className={styles.link} to="/blog">
             Blog
           </Link>
         </li>
         <li>
-          <Link className={styles.link} to="/resume">
+          <Link onClick={props.handleClick} className={styles.link} to="/resume">
             Resume
           </Link>
         </li>
         
         <li>
-          <Link className={styles.link} to="/contact">
+          <Link onClick={props.handleClick} className={styles.link} to="/contact">
             Contact
           </Link>
         </li>

@@ -6,34 +6,34 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 const Contact = () => {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.containerOne}>
-        <div className={styles.textOne}>
-          <h1 className={styles.headingOne}>Join up </h1>
-          <p className={styles.paraOne}>
+      <div className={styles.container_one}>
+        <div className={styles.text_one}>
+          <h1 className={styles.heading_one}>Join up </h1>
+          <p className={styles.para_one}>
             Stay connected for web design and development.
           </p>
         </div>
       </div>
       
-      <div className={styles.connectOne}>
+      <div className={styles.connect_one}>
         <i>Connect with me </i>
       </div>
-      <div className={styles.socialIcon}>
-        <a className={styles.socialLink} href="https://www.facebook.com/kkeysor.rana"
+      <div className={styles.social_icon}>
+        <a className={styles.social_link} href="https://www.facebook.com/kkeysor.rana"
             target="_self">
           <i
             style={{ color: "rgb(59, 89, 152)" }}
             className="fab fa-facebook"
           ></i>
         </a>
-        <a className={styles.socialLink} href="https://www.instagram.com/keysor19/"
+        <a className={styles.social_link} href="https://www.instagram.com/keysor19/"
             target="_self">
           <i
             style={{ color: "rgb(247,119,55)" }}
             className="fab fa-instagram"
           ></i>
         </a>
-        <a className={styles.socialLink} href="https://www.linkedin.com/in/kishor-rana-chhetri/"
+        <a className={styles.social_link} href="https://www.linkedin.com/in/kishor-rana-chhetri/"
             target="_self">
           <i
             style={{ color: "rgb(40,103,178)" }}
@@ -42,10 +42,10 @@ const Contact = () => {
         </a>
       </div>
 
-      <div className={styles.connectTwo}>
+      <div className={styles.connect_two}>
         <i>or reach out to me directly</i>
       </div>
-      <div className={styles.contactIcon}>
+      <div className={styles.contact_icon}>
         <div>
           <i className="fas fa-envelope"> <span className={styles.email}>kishorranachhetri@gmail.com</span>  </i>
         </div>

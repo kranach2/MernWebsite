@@ -26,10 +26,10 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className={styles.socialIcon}>
+        <div className={styles.social_icon}>
           <a
-            className={styles.socialLink}
-            href="https://www.facebook.com/"
+            className={styles.social_link}
+            href="https://www.facebook.com/kkeysor.rana"
             target="_self"
           >
             <i
@@ -37,14 +37,14 @@ const Footer = () => {
               className="fab fa-facebook"
             ></i>
           </a>
-          <a className={styles.socialLink} href="https://www.instagram.com/"
+          <a className={styles.social_link} href="https://www.instagram.com/keysor19/"
             target="_self">
             <i
               style={{ color: "rgb(247,119,55)" }}
               className="fab fa-instagram"
             ></i>
           </a>
-          <a className={styles.socialLink} href="https://www.linkedin.com/"
+          <a className={styles.social_link} href="https://www.linkedin.com/in/kishor-rana-chhetri/"
             target="_self">
             <i
               style={{ color: "rgb(40,103,178)" }}

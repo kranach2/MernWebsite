@@ -36,14 +36,14 @@
       color:white;
   }
 
-  :local(.socialIcon){
+  :local(.social_icon){
     height:100px;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
-:local(.socialLink){
+:local(.social_link){
     width: 30px;
     height:30px;
     background-color:rgba(223, 230, 233, 0.7);
@@ -53,11 +53,11 @@
     line-height: 30px;
     box-shadow: 1px 1px 1px 1px rgba(178, 190, 195, 0.7) ;
 }
-:local(.socialLink i){
+:local(.social_link i){
     transition: all 0.3s linear; 
 }
 
-:local(.socialLink:hover i){
+:local(.social_link:hover i){
     transform:scale(1.4);
 }
 
@@ -100,14 +100,14 @@
           color:white;
       }
     
-      :local(.socialIcon){
+      :local(.social_icon){
         height:60px;
         display: flex;
         justify-content: center;
         align-content: center;
     }
 
-    :local(.socialLink){
+    :local(.social_link){
         width: 22px;
         height:22px;
         background-color:rgba(223, 230, 233, 0.7);
@@ -118,11 +118,11 @@
         box-shadow: 1px 1px 1px 1px rgba(178, 190, 195, 0.7) ;
     }
 
-    :local(.socialLink i){
+    :local(.social_link i){
         transition: all 0.3s linear; 
     }
     
-    :local(.socialLink:hover i){
+    :local(.social_link:hover i){
         transform:scale(1.4);
     }
 }
@@ -166,14 +166,14 @@
           color:white;
       }
     
-      :local(.socialIcon){
+      :local(.social_icon){
         height:60px;
         display: flex;
         justify-content: center;
         align-content: center;
     }
 
-    :local(.socialLink){
+    :local(.social_link){
         width: 22px;
         height:22px;
         background-color:rgba(223, 230, 233, 0.7);
@@ -225,14 +225,14 @@
           color:white;
       }
     
-      :local(.socialIcon){
+      :local(.social_icon){
         height:60px;
         display: flex;
         justify-content: center;
         align-content: center;
     }
 
-    :local(.socialLink){
+    :local(.social_link){
         width: 22px;
         height:22px;
         background-color:rgba(223, 230, 233, 0.7);
