@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "../css/Home.module.css"
 import Footer from "./Footer";
-import javascript_code from "../images/javascript_code.jpg";
+import javascript_code from "../images/javaScript_code.jpg";
 import mernstack from "../images/mernstack.jpeg";
 const Home = () => {
   
