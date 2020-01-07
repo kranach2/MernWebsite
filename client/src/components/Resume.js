@@ -15,7 +15,7 @@ const Resume = () => {
         <div className={styles.text}>
           <h1 className={styles.heading}>Summary</h1>
           <p className={styles.para}>
-          Currently seeking an entry-level web developer position where I can use my web development skills and knowledge to resolve client's web related problems. Hands-on experience in web development including both frontend and backend. In spite of having web development skills, I have 3 months of experience as an ICT support officer. Being passionate about web development, I have always aspired to become a successful web developer that has driven me to further invest my time and efforts into web learning, sharing and implementing knowledge into real projects. 
+          Hands-on experience in web development including both frontend and backend. In spite of having web development skills, I have 3 months of experience as an ICT support officer. Problem solver who is adaptive and consistent with innovative mind as well as can add values to the organisation by contributing to accomplish its goal.
           </p>
         </div>
 
@@ -58,11 +58,11 @@ const Resume = () => {
         <div className={styles.text}>
           <h1 className={styles.heading}>Technical Summary</h1>
           <p className={styles.para}>
-            <i className="fas fa-list fa-xs "></i> Sound knowledge of Javascript
-            (ES6): arrow function, destructuring, spread operator, rest and
-            default parameters, maps, Namees, subclasses, import, export,
-            async, await and so on
+            <i className="fas fa-list fa-xs "></i> Experience with HTML and CSS3 for design and layout.
           </p>
+          <p className={styles.para}>
+            <i className="fas fa-list fa-xs "></i>	Sound knowledge of JavaScript (ES6): arrow function, destructuring, spread operator, rest and default parameters, maps, subclasses, import, export, async, await and so on.
+            </p>
           <p className={styles.para}>
             <i className="fas fa-list fa-xs "></i> React - Class component,
             component lifecycle (mounting, updating and unmounting), higher
@@ -71,13 +71,7 @@ const Resume = () => {
             useLocation, useParams), React router
           </p>
           <p className={styles.para}>
-            <i className="fas fa-list fa-xs "></i> Redux - store, reducer, action,
-            dispatch, Class Component (connect) Functional component
-            (useSelector, useDispatch), redux thunk
-          </p>
-          <p className={styles.para}>
-            <i className="fas fa-list fa-xs "></i> Node- set up environment to run
-            node, knowledge of inbuilt modules and external modules
+            <i className="fas fa-list fa-xs "></i> Redux for state management - store, reducer, action, dispatch, Class Component (connect), Functional component (useSelector, useDispatch), redux thunk.
           </p>
           <p className={styles.para}>
             <i className="fas fa-list fa-xs "></i> Good command of structured query
@@ -89,28 +83,46 @@ const Resume = () => {
             and its operations.
           </p>
           <p className={styles.para}>
+            <i className="fas fa-list fa-xs "></i>	Node- set up environment to run node and create server, knowledge of inbuilt modules and external modules.
+          </p>
+          <p className={styles.para}>
             <i className="fas fa-list fa-xs "></i> In-depth knowledge of express web
             application framework for node.js to create server and build web
             applications and APIs.
           </p>
           <p className={styles.para}>
-            <i className="fas fa-list fa-xs "></i> Good grasp of server side
-            scripting language such as php and content managment system like
-            wordpress with hands on experience.
+            <i className="fas fa-list fa-xs "></i> Good grasp of server-side scripting language, PHP and content management system like WordPress with hands on experience.
           </p>
           <p className={styles.para}>
-            <i className="fas fa-list fa-xs "></i> Comprehensive understanding of
-            Restful API along with Get, Put, Post, Delete operations. 
+            <i className="fas fa-list fa-xs "></i> Comprehensive understanding of Restful API.
           </p>
+
+          <p className={styles.para}>
+            <i className="fas fa-list fa-xs "></i> Get, Put, Post, Delete operations on server side.
+          </p>
+            
           <p className={styles.para}>
             <i className="fas fa-list fa-xs "></i> Good insight of Version Control-
             Git (through command line and VS code)
+          </p>
+          <p className={styles.para}>
+            <i className="fas fa-list fa-xs "></i>	Deployment of apps in the cloud-based platform.
+          </p>
+          
+          <p className={styles.para}>
+            <i className="fas fa-list fa-xs "></i> Ability to create web applications with clean and maintainable code.
+          </p>
+          <p className={styles.para}>
+            <i className="fas fa-list fa-xs "></i>	Better understanding UI/UX design principles.
+          </p>
+          <p className={styles.para}>
+            <i className="fas fa-list fa-xs "></i>	Passion to create innovative and creative projects.
           </p>
         </div>
 
         <div className={styles.text}>
           <h1 className={styles.heading}>Work Experience</h1>
-          <h2 className={styles.heading_two}>Full Stack Developer</h2>
+          <h2 className={styles.heading_two}>Web Developer</h2>
           <h4 className={styles.heading_four}>
             - Perth, Western Australia (current)
           </h4>
