@@ -6,8 +6,7 @@
     height: 100vh;
   }
 
-:local(.containerOne){
-position: relative;
+:local(.container_one){
 width:100%;
 height: 100vh;
 background-image: linear-gradient(rgba(99, 110, 114, 0.7), rgba(45, 52, 54, 0.8), rgba(178, 190, 195, 0.5)), url("../images/kishor.jpg");
@@ -15,16 +14,16 @@ background-size: cover;
 filter: grayscale(50%);
 }
 
-:local(.textOne){
+:local(.text_one){
     position: relative;
     top:50%;
-     
+    width:100%;
     text-align:center;
     color:rgb(255, 255, 255);
 }
 
 
-:local(.headingOne) {
+:local(.heading_one) {
   display: block;
   font-size: 60px;
   visibility: visible;
@@ -74,7 +73,7 @@ filter: grayscale(50%);
 
 
 
-    :local(.paraOne) {
+    :local(.para_one) {
       display: block;
       font-size: 30px;
       visibility: visible;
@@ -122,7 +121,7 @@ filter: grayscale(50%);
 
 
 
-:local(.containerTwo){
+:local(.container_two){
       margin-top: 12vh;
       margin-bottom: 100px;
       width: 100%;
@@ -132,14 +131,14 @@ filter: grayscale(50%);
       align-content: center;
   }
 
-  :local(.textTwo){
+  :local(.text_two){
       width:40%;
       margin-top:80px;
       margin-left:100px;
       margin-right:110px;
   }
 
-  :local(.imageTwo){
+  :local(.image_two){
    width:40%;
       height: 600px;
       margin-right: 5px;
@@ -147,13 +146,13 @@ filter: grayscale(50%);
       overflow: hidden;
   }
 
-  :local(.imageTwo img){
+  :local(.image_two img){
   width:100%;
   height: 100%;
   filter:grayscale(50%);
   }
   
-  :local(.paraTwo){
+  :local(.para_two){
     margin-top: 5px;
     line-height: 25px;
     letter-spacing: 1px;
@@ -161,28 +160,24 @@ filter: grayscale(50%);
   }
 
   @media (max-width: 1000px){
-    :local(.containerOne){
+    :local(.container_one){
       background-position: center;
       background-size: 100% 100%;
     } 
 
-    :local(.textOne){
-      position: absolute;
-      top:50%;
-      left:30%;  
-      text-align:center;
-      color:rgb(255, 255, 255);
-  }
+    :local(.text_one){
+      left:0%;
+    }
 
-  :local(.headingOne){
+  :local(.heading_one){
     font-size: 50px;
     }
 
-  :local(.paraOne){
+  :local(.para_one){
       font-size: 18px;
   }
 
-      :local(.containerTwo){
+      :local(.container_two){
         width: 100%;
         height: auto;
         display: flex;
@@ -192,7 +187,7 @@ filter: grayscale(50%);
         margin-top: -50px;
       }
 
-      :local(.textTwo) {
+      :local(.text_two) {
         width: 80%;
         margin-left: 10%;
         height: auto;
@@ -200,19 +195,19 @@ filter: grayscale(50%);
           
       }
 
-      :local(.headingTwo){
+      :local(.heading_two){
         width: 100%;
         text-align: center;
         font-size:30px;
       }
 
-      :local(.paraTwo) {
+      :local(.para_two) {
         font-size: 20px;
         line-height: 30px;
         letter-spacing: 1px;
       }
       
-      :local(.imageTwo)
+      :local(.image_two)
        {
         width: 80%;
         margin-left: 10%;
@@ -221,7 +216,7 @@ filter: grayscale(50%);
         overflow: hidden;
       }
 
-      :local(.imageTwo img)
+      :local(.image_two img)
        {
         width: 100%;
         height: 100%;
@@ -231,26 +226,22 @@ filter: grayscale(50%);
       
   }
   @media (max-width: 800px){
-    :local(.containerOne){
+    :local(.container_one){
       background-position: center;
       background-size: 100% 100%;
     } 
-    :local(.textOne){
-      position: absolute;
-      top:50%;
-      left:30%;  
-      text-align:center;
-      color:rgb(255, 255, 255);
-  }
+    :local(.text_one){
+      left:0%;
+    }
 
-  :local(.headingOne){
+  :local(.heading_one){
     font-size: 45px;
     }
 
-  :local(.paraOne){
+  :local(.para_one){
       font-size: 17px;
   }
-      :local(.containerTwo)
+      :local(.container_two)
        {
         width: 100%;
         height: auto;
@@ -262,7 +253,7 @@ filter: grayscale(50%);
         
       }
 
-      :local(.textTwo) {
+      :local(.text_two) {
         width: 80%;
         margin-left: 10%;
         height: auto;
@@ -270,19 +261,19 @@ filter: grayscale(50%);
           
       }
 
-      :local(.headingTwo){
+      :local(.heading_two){
         width: 100%;
         text-align: center;
         font-size:28px;
       }
 
-      :local(.paraTwo) {
+      :local(.para_two) {
         font-size: 18px;
         line-height: 28px;
         letter-spacing: 1px;
       }
       
-      :local(.imageTwo)
+      :local(.image_two)
        {
         width: 80%;
         margin-left: 10%;
@@ -291,7 +282,7 @@ filter: grayscale(50%);
         overflow: hidden;
       }
 
-      :local(.imageTwo img)
+      :local(.image_two img)
        {
         width: 100%;
         height: 100%;
@@ -302,25 +293,22 @@ filter: grayscale(50%);
   }
 
   @media (max-width: 600px){  
-    :local(.containerOne){
+    :local(.container_one){
       background-position: center;
       background-size: 100% 100%;
-    }    
-      :local(.textOne){
-          position: absolute;
-          top:50%;
-          left:20%;  
-          text-align:center;
-          color:rgb(255, 255, 255);
-      }
-
-      :local(.headingOne){
-        font-size: 30px;
+    } 
+    :local(.text_one){
+      left:0%;
+    }
+      :local(.heading_one){
+    
+        font-size: 25px;
         }
-      :local(.paraOne){
+      :local(.para_one){
           font-size: 16px;
       } 
-          :local(.containerTwo)
+
+          :local(.container_two)
            {
             width: 100%;
             height: auto;
@@ -331,26 +319,26 @@ filter: grayscale(50%);
             margin-top: -50px;
           }
           
-          :local(.textTwo) {   
+          :local(.text_two) {   
             width: 80%;
             margin-left: 10%;
             height: auto;
             margin-bottom: 20px;
             }
-          :local(.headingTwo){
+          :local(.heading_two){
             width: 100%;
             text-align: center;
             font-size:25px;
             
           }
 
-          :local(.paraTwo) {
+          :local(.para_two) {
             font-size: 16px;
             line-height: 25px;
             letter-spacing: 1px;
           }
   
-          :local(.imageTwo)
+          :local(.image_two)
            {
             width: 80%;
             margin-left: 10%;
@@ -359,7 +347,7 @@ filter: grayscale(50%);
             overflow: hidden;
           }
 
-          :local(.imageTwo img)
+          :local(.image_two img)
            {
             width: 100%;
             height: 100%;

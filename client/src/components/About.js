@@ -5,19 +5,19 @@ import kishor_pic from "../images/kishor_pic.JPG";
 const About = () => {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.containerOne}>
-        <div className={styles.textOne}>
-          <h1 className={styles.headingOne}>About Myself</h1>
-          <p className={styles.paraOne}>My Passion and Personality</p>
+      <div className={styles.container_one}>
+        <div className={styles.text_one}>
+          <h1 className={styles.heading_one}>About Myself</h1>
+          <p className={styles.para_one}>My Passion and Personality</p>
         </div>
       </div>
 
-      <div className={styles.containerTwo}>
-        <div className={styles.textTwo}>
-          <h1 className={styles.headingTwo}>
+      <div className={styles.container_two}>
+        <div className={styles.text_two}>
+          <h1 className={styles.heading_two}>
             Some interesting facts about myself
           </h1>
-          <p className={styles.paraTwo}>
+          <p className={styles.para_two}>
             I am originally from Kathmandu, capital of Nepal. To pursue higher
             education, came to Perth, WA in 2013. In fact, I came to Edith Cowan
             University to study biomedical science as I had a science background
@@ -35,7 +35,7 @@ const About = () => {
             ready for long drive.
           </p>
         </div>
-        <div className={styles.imageTwo}>
+        <div className={styles.image_two}>
           <img src={kishor_pic} alt=" Profile of Kishor" />
         </div>
       </div>
