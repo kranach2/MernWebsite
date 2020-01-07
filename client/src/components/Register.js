@@ -181,37 +181,37 @@ const Register = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.bg}>
-          <div className={styles.centerDiv}>
-            <h2 className={styles.headingTwo}>Sign Up</h2>
+          <div className={styles.center_div}>
+            <h2 className={styles.heading_two}>Sign Up</h2>
             <form onSubmit={handleSubmit}>
-              <div className={styles.firstNameDiv}>
+              <div className={styles.first_name_div}>
                 <input
                   onChange={handleFirstName}
                   onKeyDown={handleFirstNameKey}
-                  className={styles.firstName}
+                  className={styles.first_name}
                   type="text"
                   name="firstName"
                   value={firstname}
                   placeholder="First Name &#42;"
                 />
-                <span className={styles.firstNameError}>{firstNameError}</span>
+                <span className={styles.first_name_error}>{firstNameError}</span>
               </div>
 
               <br />
-              <div className={styles.lastNameDiv}>
+              <div className={styles.last_name_div}>
                 <input
                   onChange={handleLastName}
                   onKeyDown={handleLastNameKey}
-                  className={styles.lastName}
+                  className={styles.last_name}
                   type="text"
                   name="lastName"
                   value={lastname}
                   placeholder="Last Name &#42;"
                 />
-                <span className={styles.lastNameError}>{lastNameError}</span>
+                <span className={styles.last_name_error}>{lastNameError}</span>
               </div>
               <br />
-              <div className={styles.emailDiv}>
+              <div className={styles.email_div}>
                 <input
                   onChange={handleEmail}
                   onKeyDown={handleEmailKey}
@@ -221,10 +221,10 @@ const Register = () => {
                   value={email}
                   placeholder="Email &#42;"
                 />
-                <span className={styles.emailError}>{emailError}</span>
+                <span className={styles.email_error}>{emailError}</span>
               </div>
               <br />
-              <div className={styles.passwordDiv}>
+              <div className={styles.password_div}>
                 <input
                   onChange={handlePassword}
                   onKeyDown={handlePasswordKey}
@@ -234,10 +234,10 @@ const Register = () => {
                   value={password}
                   placeholder="Password &#42;"
                 />
-                <span className={styles.passwordError}>{passwordError}</span>
+                <span className={styles.password_error}>{passwordError}</span>
               </div>
               <br />
-              <div className={styles.contactDiv}>
+              <div className={styles.contact_div}>
                 <input
                   onChange={handleContact}
                   onKeyDown={handleContactKey}
@@ -247,7 +247,7 @@ const Register = () => {
                   value={contact}
                   placeholder="Contact"
                 />
-                <span className={styles.contactError}>{contactError}</span>
+                <span className={styles.contact_error}>{contactError}</span>
               </div>
               <br />
               <div>

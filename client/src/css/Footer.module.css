@@ -10,6 +10,7 @@
       background-color: black;
       color:white;
   }
+  
   :local(.para){
       position: absolute;
       width:100%;
@@ -71,7 +72,9 @@
           background-color: black;
           color:white;
       }
-      
+      :local(.content_section){
+        margin-top:80px;
+    }
       :local(.para){
         position: absolute;
         width:100%;
@@ -137,7 +140,9 @@
           background-color: black;
           color:white;
       }
-      
+      :local(.content_section){
+          margin-top:80px;
+      }
       :local(.para){
         position: absolute;
         width:100%;
@@ -196,7 +201,10 @@
           background-color: black;
           color:white;
       }
-      
+      :local(.content_section){
+        margin-top:50px;
+    }
+
       :local(.para){
         position: absolute;
         width:100%;

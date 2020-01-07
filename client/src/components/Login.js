@@ -72,10 +72,10 @@ const Login = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.bg}>
-          <div className={styles.centerDiv}>
-            <h2 className={styles.headingTwo}>Login In</h2>
+          <div className={styles.center_div}>
+            <h2 className={styles.heading_two}>Login In</h2>
             <form onSubmit={handleSubmit}>
-              <div className={styles.emailDiv}>
+              <div className={styles.email_div}>
                 <input
                   onChange={handleEmail}
                   onKeyDown={handleEmailKey}
@@ -85,10 +85,10 @@ const Login = () => {
                   value={email}
                   placeholder="Email &#42;"
                 />
-                 <span className={styles.emailError}>{emailError}</span>
+                 <span className={styles.email_error}>{emailError}</span>
               </div>
               <br />
-              <div className={styles.passwordDiv}>
+              <div className={styles.password_div}>
                 <input
                 onChange={handlePassword}
                 onKeyDown={handlePasswordKey}
@@ -98,7 +98,7 @@ const Login = () => {
                   name="password"
                   placeholder="Password &#42;"
                 />
-                 <span className={styles.passwordError}>{passwordError}</span>
+                 <span className={styles.password_error}>{passwordError}</span>
               </div>
               <br />
 

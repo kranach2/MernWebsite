@@ -6,6 +6,7 @@ const Footer = () => {
   return (
     <div className={styles.wrapper}>
       <div className={styles.footer}>
+        <div className={styles.content_section}>
         <p className={styles.para}>
           {" "}
           &copy; 2019 Kishor Rana Chhetri. All rights reserved. Full Stack
@@ -53,6 +54,8 @@ const Footer = () => {
           </a>
         </div>
       </div>
+      </div>
+
     </div>
   );
 };
