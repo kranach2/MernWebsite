@@ -27,7 +27,7 @@ const Home = () => {
         <p className={styles.para_two}>This website aims to introduce myself and showcase my skills, knowledge and experience. Moreover, as we know, sharing is caring, it also contains blog on javascript and its frameworks including both front and backend. I will post blogs on different topics based on my knowledge and experience. I have comment section as well to make it more interactive and readers can express their opinions regarding particular topics.</p>
         </div>
         <div className={styles.image_two}>
-            <img src={javascript_code} alt="JavasScript Code"/>
+            <img src={javascript_code} alt="JavasScript Code" Pic/>
         </div>
       </div>
 
