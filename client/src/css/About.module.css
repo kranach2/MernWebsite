@@ -70,9 +70,6 @@ filter: grayscale(50%);
   }
 }
 
-
-
-
     :local(.para_one) {
       display: block;
       font-size: 30px;
