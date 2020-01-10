@@ -1,7 +1,7 @@
-import React, { useState} from "react";
+import React, { useState, Suspense, lazy} from "react";
 import Navbar from "./Navbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./Home";
+
 import About from "./About";
 import Blog from "./Blog";
 import Resume from "./Resume";
@@ -12,7 +12,7 @@ import Register from "./Register";
 import Login from "./Login";
 import Rmenu from "./Rmenu";
 import ScrollToTop from 'react-router-scroll-top';
- 
+const AsyncHome = lazy( () => import("./Home"));
 function App() {
   const [change, setchange] = useState(false);
   const handleClick = ()=>{
@@ -26,12 +26,14 @@ if(change){
 }
   return (
     <div className="App">
+      <Suspense fallback={<div> Loading..... </div>}>
       <Router>
         <Navbar handleClick={handleClick}/>
         {rmenu}
         <ScrollToTop>
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={AsyncHome} />
+          
           <Route path="/about" component={About} />
           <Route path="/blog" component={Blog} />
           <Route path="/resume" component={Resume} />
@@ -44,6 +46,7 @@ if(change){
         </Switch>
         </ScrollToTop>
       </Router>
+      </Suspense>
     </div>
   );
 }
