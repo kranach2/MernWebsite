@@ -10,7 +10,6 @@ import TermsOfService from "./TermsOfService";
 import PrivacyPolicy from "./PrivacyPolicy";
 import Register from "./Register";
 import Login from "./Login";
-import Comment from "./Comment";
 import Rmenu from "./Rmenu";
 import ScrollToTop from 'react-router-scroll-top';
  
@@ -41,7 +40,7 @@ if(change){
           <Route path="/privacy-policy" component={PrivacyPolicy} />
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
-          <Route path="/add-comment" component={Comment} />
+          
         </Switch>
         </ScrollToTop>
       </Router>

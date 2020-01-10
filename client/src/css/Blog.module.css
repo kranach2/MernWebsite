@@ -6,7 +6,7 @@
   
   :local(.container){
     margin-top:5vh; 
-    height:100vh;
+    height:auto;
   }
   
   :local(.blog_section){

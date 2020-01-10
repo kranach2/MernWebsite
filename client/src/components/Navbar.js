@@ -41,7 +41,7 @@ const Navbar = (props) => {
           </Link>
         </li>
         <li>  
-          <Link onClick={props.handleClick}>
+          <Link onClick={props.handleClick} to = "#">
           <i className="fas fa-bars "></i>
           </Link>
         </li>
