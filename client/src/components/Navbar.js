@@ -2,7 +2,7 @@ import React from "react";
 import { Link} from "react-router-dom";
 import styles from "../css/Navbar.module.css";
 import pic from "../images/logo.png";
-
+import "@fortawesome/fontawesome-free/css/all.min.css";
 const Navbar = (props) => {
   return (
       <div className={styles.parent}>
