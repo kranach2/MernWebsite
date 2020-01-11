@@ -2,7 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react";
 import styles from "../css/Login.module.css";
 import Footer from "./Footer";
-//import Comment from "./Comment";
 import axios from "axios";
 const Login = () => {
   
@@ -12,10 +11,9 @@ const Login = () => {
   const [passwordError, setpasswordError] = useState("");
   const [message, setmessage] = useState(null);
   const [login, setLogin] = useState(false);
-  const [logout, setLogout] = useState(false);
   const [store, setStore] = useState(null);
   const [comment, setcomment] = useState("Add comments....");
-
+  
   useEffect(() => {
     storeCollector()
   }, []);
@@ -23,6 +21,7 @@ const Login = () => {
   const storeCollector = () =>{
     let store = JSON.parse(localStorage.getItem("login"));
     setStore(store)
+    console.log(store);
     if(store){
 setLogin(true);
 
@@ -68,7 +67,6 @@ setLogin(true);
   return emailError;
  }
 
-
     if (password === "") {
  
       setpasswordError("Please fill the field");
@@ -77,9 +75,10 @@ setLogin(true);
   const handleSubmitComment = e => {
     e.preventDefault();
     let token =  store.token;
-       
+    let name = store.name 
     const comments = {
-      comment: comment
+      comment: comment,
+      name:name
     };
   
     axios.post("comments/add", comments, { headers : {
@@ -87,10 +86,8 @@ setLogin(true);
       "x-auth-token":token
       
             }}).then(res => { 
-              console.log(token);
       console.log(res.data);
       setLogin(true);
-      
       setcomment("");
       setmessage("Posted succesfully!");
       
@@ -116,9 +113,10 @@ setLogin(true);
         console.log(res.data);
         localStorage.setItem("login", JSON.stringify({
           login:true,
-          token:res.data.token
-        }));
-        setLogin(true);
+          token:res.data.token,
+          name: `${res.data.user.firstname} ${res.data.user.lastname}`
+          
+        }));        
         setmessage("You are Loggedin!");
         setemailError("");
         setpasswordError("");        
@@ -173,15 +171,15 @@ setLogin(true);
             </form>
           </div>
         </div>
-        {logout}
       </div>
       
       :
       
       <div className={styles.comment_container}>
-        
+        <div className={styles.header}>
+      <p className={styles.header_para}>Welcome {store.name}</p>
           <button onClick={handleLogout} className={styles.logout_button}>Logout</button>
-
+          </div>
       <div className={styles.form}>
         <form onSubmit={handleSubmitComment}>
           <textarea

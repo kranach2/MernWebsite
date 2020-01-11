@@ -5,7 +5,9 @@ const Comment = require("../models/comments.modal");
 //Post comments
 router.post("/add", authentication, (req, res) => {
     const newComment = new Comment({
-        comment:req.body.comment
+        comment:req.body.comment,
+        name:req.body.name,
+        
     });
     newComment.save().then(comment => res.json(comment));
 });

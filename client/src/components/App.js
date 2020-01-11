@@ -1,7 +1,9 @@
-import React, { useState, Suspense, lazy} from "react";
-import Navbar from "./Navbar";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
+import ScrollToTop from 'react-router-scroll-top';
+import Navbar from "./Navbar";
+import Rmenu from "./Rmenu";
+import Home from "./Home";
 import About from "./About";
 import Blog from "./Blog";
 import Resume from "./Resume";
@@ -10,9 +12,18 @@ import TermsOfService from "./TermsOfService";
 import PrivacyPolicy from "./PrivacyPolicy";
 import Register from "./Register";
 import Login from "./Login";
-import Rmenu from "./Rmenu";
-import ScrollToTop from 'react-router-scroll-top';
-const AsyncHome = lazy( () => import("./Home"));
+// const Home = lazy( () => import("./Home"));
+// const About = lazy( () => import("./About"));
+// const Blog = lazy( () => import("./Blog"));
+// const Resume = lazy( () => import("./Resume"));
+// const Contact = lazy( () => import("./Contact"));
+// const Navbar = lazy( () => import("./Navbar"));
+// const Rmenu = lazy( () => import("./Rmenu"));
+// const TermsOfService = lazy( () => import("./TermsOfService"));
+// const PrivacyPolicy = lazy( () => import("./PrivacyPolicy"));
+// const Register = lazy( () => import("./Register"));
+// const Login = lazy( () => import("./Login"));
+
 function App() {
   const [change, setchange] = useState(false);
   const handleClick = ()=>{
@@ -26,14 +37,12 @@ if(change){
 }
   return (
     <div className="App">
-      <Suspense fallback={<div> Loading..... </div>}>
       <Router>
         <Navbar handleClick={handleClick}/>
         {rmenu}
-        <ScrollToTop>
+        <ScrollToTop> 
         <Switch>
-          <Route exact path="/" component={AsyncHome} />
-          
+          <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/blog" component={Blog} />
           <Route path="/resume" component={Resume} />
@@ -42,15 +51,12 @@ if(change){
           <Route path="/privacy-policy" component={PrivacyPolicy} />
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
-          
         </Switch>
         </ScrollToTop>
-      </Router>
-      </Suspense>
+        </Router>  
     </div>
   );
 }
-
 
 export default App;
 

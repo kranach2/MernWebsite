@@ -21,11 +21,6 @@ import styles from "../css/PrivacyPolicy.module.css";
         </div>
         <Footer />
         </div>
-        
-           
-
-           
-        
-    )
+        )
 }
 export default PrivacyPolicy;

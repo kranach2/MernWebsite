@@ -4,7 +4,6 @@ import styles from "../css/Navbar.module.css";
 import pic from "../images/logo.png";
 
 const Navbar = (props) => {
-  
   return (
       <div className={styles.parent}>
     <div className={styles.navbar}>

@@ -80,35 +80,28 @@ text-shadow: -2px 2px 1px#222f3e;
     display:block;
   }
 
-  @media (min-width:1200px){
-
-  }
-
-  @media (max-width: 1000px){
-  
-  }
-
-  @media (max-width: 800px){
-      
-  }
-  
-  @media (max-width: 600px){
-     
-      
-      }
 
       :local(.comment_container){
         margin-top:15vh; 
         height:100vh;
         width:100%;
       }
-        
+        :local(.header){
+          display: flex;
+          justify-content: space-between;
+          align-content: center;
+        }
+        :local(.header_para){
+          font-size: 20px;
+          margin-left: 10px;
+        }
+
       :local(.logout_button){
         width:20%;
        margin-right: 0;
         color: black;
         background-color: white;
-        font-size: 20px;
+        
           
       } 
 
@@ -187,19 +180,6 @@ text-shadow: -2px 2px 1px#222f3e;
            font-size: 20px;
       
         }
-      
-        :local(.links){
-          margin-bottom: 100px;
-        }
-    
-        :local(.linkOne),
-        :local(.linkTwo){
-          font-size: 20px;
-          
-        }
-          :local(.linkPara){
-            font-size: 20px;
-          } 
       }
       @media (max-width: 800px){
         :local(.comment_container){
@@ -220,24 +200,11 @@ text-shadow: -2px 2px 1px#222f3e;
            font-size: 18px;
       
         }
-      
-        :local(.links){
-          margin-bottom: 100px;
-        }
-    
-        :local(.linkOne),
-        :local(.linkTwo){
-          font-size: 18px;
-          
-        }
-          :local(.linkPara){
-            font-size: 18px;
-          } 
       }
       @media (max-width: 600px){
 
         :local(.comment_container){
-          margin-top:10vh; 
+          margin-top:15vh; 
         }
 
         :local(.form){
@@ -260,20 +227,5 @@ text-shadow: -2px 2px 1px#222f3e;
            font-size: 16px;
       
         }
-      
-        :local(.links){
-          
-          margin-bottom: 100px;
-        }
-      
-        :local(.linkOne),
-        :local(.linkTwo){
-          font-size: 16px;
-          
-        }
-      
-          :local(.linkPara){
-            font-size: 16px;
-          }
           
           }    

@@ -4,9 +4,6 @@ import { Link } from "react-router-dom";
 import styles from "../css/Rmenu.module.css";
 
 const Rmenu = (props) => {
-
- 
-
   return (
     <div className={styles.wrapper}>
       <div className={styles.container}>

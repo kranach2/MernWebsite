@@ -327,7 +327,6 @@
 
 :local(.heading_one) {
   font-size: 28px;
-  font-weight: 28px;
 }
 :local(.italic) {
 margin-left: 10px;
@@ -478,7 +477,7 @@ margin-left: 10px;
 
 :local(.heading_one) {
   font-size: 28px;
-  font-weight: 28px;
+  
 }
 :local(.italic) {
 margin-left: 10px;
@@ -628,7 +627,7 @@ margin-left: 10px;
   
   :local(.heading_one) {
     font-size: 25px;
-    font-weight: 25px;
+    
   }
 
   :local(.italic) {

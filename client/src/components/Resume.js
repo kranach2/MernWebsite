@@ -370,8 +370,6 @@ const Resume = () => {
             <i className="fas fa-list fa-xs"></i> Full Time Availability
           </p>
         </div>
-        
-        
       </div>
       <Footer />
     </div>

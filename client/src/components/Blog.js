@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import styles from "../css/Blog.module.css";
 
 const Blog = () => {
-  const [comment, setcomment] = useState([]);
+const [comment, setcomment] = useState([]);
 
   useEffect(() => {
     axios
@@ -69,7 +69,12 @@ const Blog = () => {
             return (
               <tbody key={comments._id}>
                 <tr>
-                  <td className={styles.table_data}>  {comments.comment} &nbsp; &nbsp; &nbsp;<span className={styles.span}>-commented on: {moment(comments.commentDate.slice(0,10)).format("DD/MM/YY")}</span></td>
+                  <td className={styles.table_data}>  {comments.comment} 
+                  <br/>
+                  <span className={styles.span}>-commented by: {comments.name}</span> &nbsp;
+                  <span className={styles.span}>on: {moment(comments.commentDate.slice(0,10)).format("DD/MM/YY")}</span>
+                  
+                  </td>
             
                 </tr>
               </tbody>

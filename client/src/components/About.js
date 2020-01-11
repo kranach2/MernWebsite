@@ -5,6 +5,7 @@ import kishor_pic from "../images/kishor_pic.JPG";
 const About = () => {
   return (
     <div className={styles.wrapper}>
+      
       <div className={styles.container_one}>
         <div className={styles.text_one}>
           <h1 className={styles.heading_one}>About Myself</h1>
