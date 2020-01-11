@@ -1,27 +1,26 @@
-import React, { useState, Suspense, lazy } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ScrollToTop from "react-router-scroll-top";
-import Loading from "./Loading";
+import ScrollToTop from 'react-router-scroll-top';
 import Navbar from "./Navbar";
 import Rmenu from "./Rmenu";
-//import Home from "./Home";
-//import About from "./About";
-//import Blog from "./Blog";
+import Home from "./Home";
+import About from "./About";
+import Blog from "./Blog";
 import Resume from "./Resume";
-//import Contact from "./Contact";
-//import TermsOfService from "./TermsOfService";
-//import PrivacyPolicy from "./PrivacyPolicy";
+import Contact from "./Contact";
+import TermsOfService from "./TermsOfService";
+import PrivacyPolicy from "./PrivacyPolicy";
 import Register from "./Register";
 import Login from "./Login";
-const Home = lazy( () => import("./Home"));
- const About = lazy( () => import("./About"));
- const Blog = lazy( () => import("./Blog"));
- //const Resume = lazy( () => import("./Resume"));
- const Contact = lazy( () => import("./Contact"));
-//const Navbar = lazy( () => import("./Navbar"));
+// const Home = lazy( () => import("./Home"));
+ //const About = lazy( () => import("./About"));
+// const Blog = lazy( () => import("./Blog"));
+// const Resume = lazy( () => import("./Resume"));
+// const Contact = lazy( () => import("./Contact"));
+// const Navbar = lazy( () => import("./Navbar"));
 // const Rmenu = lazy( () => import("./Rmenu"));
- const TermsOfService = lazy( () => import("./TermsOfService"));
-  const PrivacyPolicy = lazy( () => import("./PrivacyPolicy"));
+// const TermsOfService = lazy( () => import("./TermsOfService"));
+// const PrivacyPolicy = lazy( () => import("./PrivacyPolicy"));
 // const Register = lazy( () => import("./Register"));
 // const Login = lazy( () => import("./Login"));
 
@@ -39,11 +38,9 @@ if(change){
   return (
     <div className="App">
       <Router>
-      
         <Navbar handleClick={handleClick}/>
         {rmenu}
         <ScrollToTop> 
-        <Suspense fallback= {<Loading />} >
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
@@ -55,7 +52,6 @@ if(change){
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
         </Switch>
-        </Suspense>
         </ScrollToTop>
         
         </Router>  
