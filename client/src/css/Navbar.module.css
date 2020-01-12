@@ -72,8 +72,8 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;  
-    background-image: url("../images/nav.jpg");
-    filter:grayscale(100%); 
+    background-color:rgb(72,72,72);
+    filter:grayscale(20%); 
   }
   
   :local(.menu ul) {
@@ -127,8 +127,8 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;  
-    background-image: url("../images/nav.jpg");
-    filter:grayscale(100%); 
+    background-color:rgb(72,72,72);
+    filter:grayscale(20%); 
   }
   
   :local(.menu ul) {
@@ -184,8 +184,8 @@
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;  
-    background-image: url("../images/nav.jpg");
-    filter:grayscale(100%);  
+    background-color:rgb(72,72,72);
+    filter:grayscale(20%);  
   }
   
   :local(.menu ul) {
