@@ -10,7 +10,8 @@ lib/
 
 # production
 /build
-
+.env
+config/default.json
 # misc
 .DS_Store
 .env.local
